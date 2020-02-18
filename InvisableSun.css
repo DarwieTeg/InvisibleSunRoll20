@@ -1,0 +1,21 @@
+.sheet-table {
+  display: table;
+  width: 100%;
+  border-collapse:collapse;
+  border-spacing: 5px;
+  table-layout: fixed;
+}
+
+.sheet-table-row {
+  display: table-row;
+  width: 100%;
+}
+
+.sheet-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-left: 3px;
+    padding-right: 0px;
+    padding-left: 1px;
+}
