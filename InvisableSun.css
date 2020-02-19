@@ -74,15 +74,15 @@ I forget where I found this but thanks!*/
 
 /*Configure the tab buttons*/
 .sheet-character,
-.second_page,
-.sheet-journal {
+.sheet-second_page,
+.sheet-spell_page {
 	display: none;
 }
 
 /* show the selected tab */
 .sheet-tabstoggle[value="character"] ~ div.sheet-character,
-.sheet-tabstoggle[value="second_page"] ~ div.second_page,
-.sheet-tabstoggle[value="spell_page"] ~ div.sheet-magic-page {
+.sheet-tabstoggle[value="second_page"] ~ div.sheet-second_page,
+.sheet-tabstoggle[value="spell_page"] ~ div.sheet-spell_page {
 	display: block;
 }
 /* STYLES */
