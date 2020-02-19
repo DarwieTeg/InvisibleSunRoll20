@@ -6,15 +6,15 @@
     </div>
     <div class= "table">
         <div class="table-row input-text">
-            <div class="table-cell cell-10">A</div>
+            <div class="table-cell cell-10 cell-right">A</div>
             <div class="table-cell"><input type="text" name="attr_foundation" value="(Foundation)" /></div>
             <div class="table-cell"><input type="text" name="attr_heart" value="(Heart)" /></div>
             <div class="table-cell">
                 <select name="attr_order"/>
-                  <option value="0" selected="selected">Select Order</option>
+                  <option value="no order selected" selected="selected">Select Order</option>
                   <option value="makers">Of the Order of Makers</option>
-                  <option value="vance">Of the Order of The Vance</option>
-                  <option value="weeavers">Of the Order of Weeavers</option>
+                  <option value="vance">Of the Order of the Vance</option>
+                  <option value="weavers">Of the Order of Weavers</option>
                   <option value="geotica">Of the Order of Geotica</option>
                   <option value="apostate">Apostate</option>
                 </select>
@@ -23,7 +23,7 @@
     </div>
     <div class= "table">
         <div class="table-row input-text">
-            <div class="table-cell cell-10">Who:</div>
+            <div class="table-cell cell-10 cell-right">Who:</div>
             <div class="table-cell"><input type="text" name="attr_focus" value="(Focus)"/></div>
         </div>
     </div>
@@ -32,15 +32,56 @@
 <div class= "section">
     <div class='2colrow'>
       <div class='col'>
-        Appearance:
-        <div class="sheet-expand">
-            <span name="attr_appearance"></span>
-            <textarea spellcheck="false" name="attr_appearance" spellcheck="false"></textarea>
+        <div class= "table">
+            <div class="table-row input-text">
+                <div class="table-cell cell-20"><input type="text" name="attr_degree" value="1st"/></div>
+                <div class="table-cell cell-30 cell-center">Degree</div>
+                <div class="table-cell"><input type="text" name="attr_degree_type" value="@{order}" disabled="true" style="text-transform: capitalize" /></div>
+            </div>
+        </div>
+        <div class="input-text">
+            Heart Relationships:
+            <div class="sheet-expand">
+                <span name="attr_appearance"></span>
+                <textarea spellcheck="false" name="attr_appearance" spellcheck="false"></textarea>
+            </div>
+        </div>
+        <div>
+            Appearance:
+            <div class="sheet-expand">
+                <span name="attr_appearance"></span>
+                <textarea spellcheck="false" name="attr_appearance" spellcheck="false"></textarea>
+            </div>
         </div>
       </div>
     
       <div class='col'>
-        Floof Sald
+        <div class= "table">
+            <div class="table-row input-text">
+                <div class="table-cell cell-15"><input type="text" name="attr_certes" /></div>
+                <div class="table-cell cell-20 cell-left">Certes</div>
+                <div class="table-cell cell-25 cell-right">Acumene</div>
+                <div class="table-cell cell-15"><input type="text" name="attr_Acumene" /></div>
+                <div class="table-cell cell-5 cell-center">/</div>
+                <div class="table-cell cell-15"><input type="text" name="attr_Acumene_total" /></div>
+            </div>
+            <div class="table-row input-text">
+                <div class="table-cell"><input type="text" name="attr_Qualia" /></div>
+                <div class="table-cell cell-left">Qualia</div>
+                <div class="table-cell cell-right">Joy</div>
+                <div class="table-cell "><input type="text" name="attr_joy" /></div>
+                <div class="table-cell cell-center">/</div>
+                <div class="table-cell "><input type="text" name="attr_joy_max" /></div>
+            </div>
+            <div class="table-row input-text">
+                <div class="table-cell"></div>
+                <div class="table-cell cell-left"></div>
+                <div class="table-cell cell-right">Despair</div>
+                <div class="table-cell "><input type="text" name="attr_despair" /></div>
+                <div class="table-cell cell-center">/</div>
+                <div class="table-cell "><input type="text" name="attr_despair_max" /></div>
+            </div>
+        </div>
       </div>
     
       

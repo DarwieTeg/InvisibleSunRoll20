@@ -22,7 +22,8 @@
 }
 
 
-/* Auto Expanding Text areaee, thanks Kryx */
+/* Auto Expanding Text areaee, 
+I forget where I found this but thanks!*/
 .sheet-expand {
 	position: relative;
 	cursor: text;
@@ -65,8 +66,8 @@
   min-width: 15px;
   max-width: 100%;
   width: 100%;
-  border-radius: 1px;
-  border: 2px;
+  border-color: #909090;
+  border-width:  0px 0px 2px 0px ;
 }
 
 .sheet-cell-a { width: auto; }
@@ -95,6 +96,12 @@
     padding-left: 15px;
 }
 .sheet-cell-center{text-align: center;}
-.sheet-cell-right{text-align: right;}
-.sheet-cell-left{text-align: left;}
+.sheet-cell-right{
+    text-align: right;
+    padding-right: 5px;
+}
+.sheet-cell-left{
+    text-align: left;
+    padding-left: 5px;
+}
 .sheet-cell-boarder{border: solid 1px;}
