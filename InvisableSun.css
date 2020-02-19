@@ -47,10 +47,43 @@ I forget where I found this but thanks!*/
 	width: 100%;
 	display: block;
 	box-sizing: border-box;
-	border: solid 1px black;
-	border-radius: 0;
+
 	box-shadow: none;
 	padding: inherit;
+}
+
+
+.sheet-order-toggle[value="makers"] ~ div.sheet-block-Makers,
+.sheet-order-toggle[value="vance"] ~ div.sheet-block-Vance,
+.sheet-order-toggle[value="weavers"] ~ div.sheet-block-Weavers,
+.sheet-order-toggle[value="geotica"] ~ div.sheet-block-Geotica,
+.sheet-order-toggle[value="apostate"] ~ div.sheet-block-Apostate{
+  display: block !important;
+}
+
+
+.sheet-block-Makers,
+.sheet-block-Vance,
+.sheet-block-Weavers,
+.sheet-block-Geotica,
+.sheet-block-Apostate{
+  display: none;
+}
+
+/* TABS */
+
+/*Configure the tab buttons*/
+.sheet-character,
+.second_page,
+.sheet-journal {
+	display: none;
+}
+
+/* show the selected tab */
+.sheet-tabstoggle[value="character"] ~ div.sheet-character,
+.sheet-tabstoggle[value="second_page"] ~ div.second_page,
+.sheet-tabstoggle[value="spell_page"] ~ div.sheet-magic-page {
+	display: block;
 }
 /* STYLES */
 
@@ -66,8 +99,6 @@ I forget where I found this but thanks!*/
   min-width: 15px;
   max-width: 100%;
   width: 100%;
-  border-color: #909090;
-  border-width:  0px 0px 2px 0px ;
 }
 
 .sheet-cell-a { width: auto; }
@@ -105,3 +136,55 @@ I forget where I found this but thanks!*/
     padding-left: 5px;
 }
 .sheet-cell-boarder{border: solid 1px;}
+
+
+.sheet-doom{
+    font-family: dicefontd4;
+    font-size: 250%;
+    text-align: left;
+}
+
+/*Order Spec Styles */
+.sheet-vance-input textarea,
+.sheet-vance-input input[type="text"],
+.sheet-vance-input input[type="number"] {
+    border-color:  #909090;
+    border-width:  2px ;
+	border-radius: 0;
+	border-style:  ridge;
+}
+
+.sheet-vance-input input[type="checkbox"]
+{
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake checkbox */
+.sheet-vance-input input[type="checkbox"] + span::before
+{
+    margin-right: 4px;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: green;
+    content: "◯";
+    width: 14px;
+    height: 14px;
+    font-size: 130%;
+}
+.sheet-vance-input input[type="checkbox"]:checked + span::before
+{
+    color: red;
+    content: "◍";
+}
+
+	
