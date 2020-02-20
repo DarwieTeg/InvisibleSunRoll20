@@ -90,7 +90,6 @@ I forget where I found this but thanks!*/
 .sheet-section {
   border: 2px solid black;
   border-radius: 5px;
-  width: 800px;
 }
 
 
@@ -167,8 +166,60 @@ I forget where I found this but thanks!*/
     z-index: 1;
 }
 
-/* Fake checkbox */
+/* Fake checkbox vance */
 .sheet-vance-input input[type="checkbox"] + span::before
+{
+    margin-right: 4px;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: green;
+    content: """;
+    width: 14px;
+    height: 14px;
+    font-size: 130%;
+}
+.sheet-vance-input input[type="checkbox"]:checked + span::before
+{
+    color: red;
+    content: "∅";
+}
+/**********/
+/* WEAVER */
+/**********/
+.sheet-weaver-input textarea,
+.sheet-weaver-input input[type="text"],
+.sheet-weaver-input input[type="number"] {
+    border-color:  #E4781A;
+    border-width:  2px ;
+	border-radius: 5px;
+	border-style:  outset;
+}
+
+.sheet-weaver-input input[type="checkbox"]
+{
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sheet-section-weaver {
+    border-color:  #831A24;
+    border-width:  4px ;
+	border-radius: 15px;
+	border-style:  outset;
+}
+
+
+/* Fake checkbox weaver */
+.sheet-weaver-input input[type="checkbox"] + span::before
 {
     margin-right: 4px;
     line-height: 14px;
@@ -181,10 +232,63 @@ I forget where I found this but thanks!*/
     height: 14px;
     font-size: 130%;
 }
-.sheet-vance-input input[type="checkbox"]:checked + span::before
+.sheet-weaver-input input[type="checkbox"]:checked + span::before
 {
     color: red;
     content: "◍";
 }
 
-	
+/**********/
+/* maker */
+/**********/
+.sheet-maker-input textarea,
+.sheet-maker-input input[type="text"],
+.sheet-maker-input input[type="number"] {
+    border-color:  #9570B6;
+    border-width:  2px ;
+	border-radius: 0px;
+	border-style:  none none groove dotted;
+}
+
+.sheet-maker-input input[type="checkbox"]
+{
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sheet-section-maker {
+    border-color:  #222F61;
+    border-width:  5px ;
+	border-radius: 1px;
+	border-style:  dashed double dashed double;
+}
+
+
+/* Fake checkbox maker */
+.sheet-maker-input input[type="checkbox"] + span::before
+{
+    margin-right: 4px;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: green;
+    content: "◯";
+    width: 14px;
+    height: 14px;
+    font-size: 130%;
+}
+.sheet-maker-input input[type="checkbox"]:checked + span::before
+{
+    color: red;
+    content: "◍";
+}
+
+
