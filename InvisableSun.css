@@ -56,7 +56,7 @@ I forget where I found this but thanks!*/
 .sheet-order-toggle[value="makers"] ~ div.sheet-block-Makers,
 .sheet-order-toggle[value="vance"] ~ div.sheet-block-Vance,
 .sheet-order-toggle[value="weavers"] ~ div.sheet-block-Weavers,
-.sheet-order-toggle[value="geotica"] ~ div.sheet-block-Geotica,
+.sheet-order-toggle[value="goetica"] ~ div.sheet-block-Goetica,
 .sheet-order-toggle[value="apostate"] ~ div.sheet-block-Apostate{
   display: block !important;
 }
@@ -65,7 +65,7 @@ I forget where I found this but thanks!*/
 .sheet-block-Makers,
 .sheet-block-Vance,
 .sheet-block-Weavers,
-.sheet-block-Geotica,
+.sheet-block-Goetica,
 .sheet-block-Apostate{
   display: none;
 }
@@ -86,6 +86,58 @@ I forget where I found this but thanks!*/
 	display: block;
 }
 /* STYLES */
+
+.sheet-certes-cell {
+    font-size: 150%;
+    border-color:  #FABF8E;
+    border-width:  4px ;
+	border-radius: 25px;
+	background-color: #FABF8E;
+}
+
+.sheet-input-certes-text input[type="text"],
+.sheet-input-certes-text input[type="number"] {
+  font-size: 175%;
+  min-width: 15px;
+  max-width: 100%;
+  width: 30%;
+  background-color: #FABF8E;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.sheet-input-qualia-text-sub input[type="text"],
+.sheet-input-qualia-text-sub input[type="number"],
+.sheet-input-certes-text-sub input[type="text"],
+.sheet-input-certes-text-sub input[type="number"] {
+  font-size: 12px;
+  min-width: 15px;
+  width: 30%;
+  height: 15px;
+  border-radius: 25px;
+  border-color:  #000;
+  text-align: center;
+}
+
+.sheet-qualia-cell {
+    font-size: 150%;
+    border-color:  #C1BECD;
+	border-radius: 25px;
+	background-color: #C1BECD;
+}
+
+
+.sheet-input-qualia-text input[type="text"],
+.sheet-input-qualia-text input[type="number"] {
+  font-size: 175%;
+  min-width: 15px;
+  max-width: 100%;
+  width: 30%;
+  background-color: #C1BECD;
+  border-radius: 25px;
+  text-align: center;
+}
+
 
 .sheet-section {
   border: 2px solid black;
@@ -291,4 +343,113 @@ I forget where I found this but thanks!*/
     content: "◍";
 }
 
+
+/**********/
+/* geotic */
+/**********/
+.sheet-geotic-input textarea,
+.sheet-geotic-input input[type="text"],
+.sheet-geotic-input input[type="number"] {
+    border-color:  #000;
+    border-width:  3px ;
+	border-radius: 15px;
+	border-style:  solid;
+}
+
+.sheet-geotic-input input[type="checkbox"]
+{
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sheet-section-geotic {
+    border-color:  #E1771C;
+    border-width:  10px ;
+	border-radius: 55px;
+	border-style:  outset;
+}
+
+
+/* Fake checkbox geotic */
+.sheet-geotic-input input[type="checkbox"] + span::before
+{
+    margin-right: 4px;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: green;
+    content: "◯";
+    width: 14px;
+    height: 14px;
+    font-size: 130%;
+}
+.sheet-geotic-input input[type="checkbox"]:checked + span::before
+{
+    color: red;
+    content: "◍";
+}
+
+
+/************/
+/* Apostate */
+/************/
+.sheet-apostate-input textarea,
+.sheet-apostate-input input[type="text"],
+.sheet-apostate-input input[type="number"] {
+    border-color:  #000;
+    border-width:  4px ;
+	border-radius: 15px 0px 35px 0px;
+	border-style:  none none double double;
+}
+
+.sheet-apostate-input input[type="checkbox"]
+{
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sheet-section-apostate {
+    border-color:  #000;
+    border-width:  4px ;
+	border-radius: 15px 0px 35px 0px;
+	border-style:  outset;
+	outline-color: #E4781A;
+	outline-width: 5px;
+}
+
+
+/* Fake checkbox apostate */
+.sheet-apostate-input input[type="checkbox"] + span::before
+{
+    margin-right: 4px;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: green;
+    content: "◯";
+    width: 14px;
+    height: 14px;
+    font-size: 130%;
+}
+.sheet-apostate-input input[type="checkbox"]:checked + span::before
+{
+    color: red;
+    content: "◍";
+}
 

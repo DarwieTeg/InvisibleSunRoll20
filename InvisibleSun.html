@@ -15,7 +15,7 @@
                   <option value="makers">Of the Order of Makers</option>
                   <option value="vance">Of the Order of the Vance</option>
                   <option value="weavers">Of the Order of Weavers</option>
-                  <option value="geotica">Of the Order of Geotica</option>
+                  <option value="goetica">Of the Order of Goetica</option>
                   <option value="apostate">Apostate</option>
                 </select>
             </div>
@@ -30,10 +30,68 @@
 </div>
 
 <div class= "section">
+    <div class= "table">
+        <div class="table-row input-text">
+            <div class="table-cell cell-20 cell-center certes-cell">Certes</div>
+            <div class="table-cell cell-20 cell-center"></div>
+            <div class="table-cell cell-20 cell-center"></div>
+            <div class="table-cell cell-20 cell-center"></div>
+            <div class="table-cell cell-20 cell-center"></div>
+        </div>
+        <div class="table-row input-text">
+            <div class="table-cell cell-center"></div>
+            <div class="table-cell cell-center certes-cell">Accuracy</div>
+            <div class="table-cell cell-center certes-cell">Physicality</div>
+            <div class="table-cell cell-center certes-cell">Movement</div>
+            <div class="table-cell cell-center certes-cell">Perception</div>
+        </div>
+        <div class="table-row input-certes-text">
+            <div class="table-cell cell-center"></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_accuracy" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_physicality" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_movement" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_perception" /></div>
+        </div>
+        <div class="table-row input-certes-text-sub">
+            <div class="table-cell cell-center"></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_accuracy_max" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_physicality_max" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_movement_max" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_perception_max" /></div>
+        </div>
+        <div class="table-row input-text">
+            <div class="table-cell cell-20 cell-center qualia-cell">Qualia</div>
+            <div class="table-cell cell-20 cell-center"></div>
+            <div class="table-cell cell-20 cell-center"></div>
+            <div class="table-cell cell-20 cell-center"></div>
+            <div class="table-cell cell-20 cell-center"></div>
+        </div>
+        <div class="table-row input-text">
+            <div class="table-cell cell-center"></div>
+            <div class="table-cell cell-center qualia-cell">Interaction</div>
+            <div class="table-cell cell-center qualia-cell">Intellect</div>
+            <div class="table-cell cell-center qualia-cell">Sorcery</div>
+            <div class="table-cell cell-center qualia-cell">Sortilege</div>
+        </div>
+        <div class="table-row input-qualia-text">
+            <div class="table-cell cell-center"></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_interaction" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_intellect" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_sorcery" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_sortilege" /></div>
+        </div>
+        <div class="table-row input-qualia-text-sub">
+            <div class="table-cell cell-center"></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_interaction_max" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_intellect_max" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_sorcery_max" /></div>
+            <div class="table-cell cell-center"><input type="text" name="attr_sortilege_max" /></div>
+        </div>
+    </div>
 
 </div>
 
-<input name="attr_order" type="hidden" class="order-toggle" value="makers">
+<input name="attr_order" type="hidden" class="order-toggle" value="apostate">
 
  <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
 
@@ -141,17 +199,17 @@
                 </div>
             </div>
             <div>
-                PC Bonds:
+                PC Bonds
                 <div class="sheet-expand">
                     <span name="attr_pc_bonds"></span>
                     <textarea spellcheck="false" name="attr_pc_bonds" spellcheck="false"></textarea>
                 </div>
-                Character Arcs:
+                Character Arcs
                 <div class="sheet-expand">
                     <span name="attr_arcs"></span>
                     <textarea spellcheck="false" name="attr_arcs" spellcheck="false"></textarea>
                 </div>
-                Shadow Facts:
+                Shadow Facts
                 <div class="sheet-expand">
                     <span name="attr_shadows"></span>
                     <textarea spellcheck="false" name="attr_shadows" spellcheck="false"></textarea>
@@ -190,10 +248,6 @@
                         </div>
                       
                     </fieldset>
-                    <div class="sheet-expand">
-                        <span name="attr_secrets"></span>
-                        <textarea spellcheck="false" name="attr_secrets" spellcheck="false"></textarea>
-                    </div>
                     Meaningful Items:
                     <div class="sheet-expand">
                         <span name="attr_meaningful_items"></span>
@@ -210,6 +264,7 @@
                         <div class="table-cell cell-10 cell-right">Savings:</div>
                         <div class="table-cell cell-30"><input type="text" name="attr_savings"/></div>
                     </div>
+
                 </div>
                     </div>
                 <div class='col'>
@@ -282,12 +337,12 @@
                             <span name="attr_responsibilities"></span>
                             <textarea spellcheck="false" name="attr_responsibilities" spellcheck="false"></textarea>
                         </div>
-                    Other People I know:
+                    Other People I know
                         <div class="sheet-expand">
                             <span name="attr_people"></span>
                             <textarea spellcheck="false" name="attr_people" spellcheck="false"></textarea>
                         </div>
-                    NPC Bonds and Connections:
+                    NPC Bonds and Connections
                     <div class= "table">
                             <div class="table-row input-text">
                                 <div class="table-cell cell-75">Name:</div>
@@ -501,10 +556,6 @@
                         </div>
                       
                     </fieldset>
-                    <div class="sheet-expand">
-                        <span name="attr_secrets"></span>
-                        <textarea spellcheck="false" name="attr_secrets" spellcheck="false"></textarea>
-                    </div>
                     Meaningful Items:
                     <div class="sheet-expand">
                         <span name="attr_meaningful_items"></span>
@@ -669,7 +720,6 @@
 
 <!-- ORDER OF MAKERS --->
 
-
 <div class="block-Makers">
     
     <div>
@@ -819,12 +869,7 @@
                             <span name="attr_secret_desc"></span>
                             <textarea spellcheck="false" name="attr_secret_desc" spellcheck="false"></textarea>
                         </div>
-                      
                     </fieldset>
-                    <div class="sheet-expand">
-                        <span name="attr_secrets"></span>
-                        <textarea spellcheck="false" name="attr_secrets" spellcheck="false"></textarea>
-                    </div>
                     Meaningful Items:
                     <div class="sheet-expand">
                         <span name="attr_meaningful_items"></span>
@@ -975,6 +1020,637 @@
         </div>
     </div>
 </div>
+
+<!-- ORDER OF GOEETICS --->
+
+<div class="block-Goetica">
+    
+    <div>
+        <button type="action" name="act_character" >Gateways</button>
+        <button type="action" name="act_second_page" >Portals</button>
+        <button type="action" name="act_spell_page" >Endless Grimoire</button>
+    </div>
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
+
+    <div class='character'>
+        <div class= "section-geotic sheet-geotic-input">
+            <div class='2colrow'>
+          <div class='col'>
+            <div class= "table">
+                <div class="table-row input-text">
+                    <div class="table-cell cell-20"><input type="text" name="attr_degree" value="1st"/></div>
+                    <div class="table-cell cell-30 cell-center">Degree</div>
+                    <div class="table-cell"><input type="text" name="attr_degree_type" value="@{order}" disabled="true" style="text-transform: capitalize" /></div>
+                </div>
+            </div>
+            <div class="input-text">
+                Heart Relationships
+                <div class="sheet-expand">
+                    <span name="attr_heart_relationships"></span>
+                    <textarea spellcheck="false" name="attr_heart_relationships" spellcheck="false"></textarea>
+                </div>
+            </div>
+            <div>
+                Appearance
+                <div class="sheet-expand">
+                    <span name="attr_appearance"></span>
+                    <textarea spellcheck="false" name="attr_appearance" spellcheck="false"></textarea>
+                </div>
+            </div>
+            <div>
+                Quirkz
+                <div class="sheet-expand">
+                    <span name="attr_quirk"></span>
+                    <textarea spellcheck="false" name="attr_quirk" spellcheck="false"></textarea>
+                </div>
+            </div>
+            <div>
+                <div class= "table">
+                    <div class="table-row input-text">
+                        <div class="table-cell cell-30">House:</div>
+                        <div class="table-cell"><input type="text" name="attr_house" /></div>
+                    </div>
+                    <div class="table-row input-text">
+                        <div class="table-cell">House Type:</div>
+                        <div class="table-cell"><input type="text" name="attr_house_type" /></div>
+                    </div>
+                </div>
+                Deescription and Details:
+                <div class="sheet-expand">
+                    <span name="attr_house_detail"></span>
+                    <textarea spellcheck="false" name="attr_house_detail" spellcheck="false"></textarea>
+                </div>
+            </div>
+            House Secrets
+            <fieldset class="repeating_skills">
+                <div class="table-row input-text">
+                    <div class="table-cell cell-50"><input type="text" name="attr_HS_name" /></div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_HS_level" /></div>
+                </div>
+                <div class="sheet-expand">
+                    <span name="attr_house_secret_desc"></span>
+                    <textarea spellcheck="false" name="attr_house_secret_desc" spellcheck="false"></textarea>
+                </div>
+              
+            </fieldset>
+
+            
+          </div>
+        
+          <div class='col'>
+            <div class= "table">
+                <div class="table-row input-text">
+                    <div class="table-cell cell-15"><input type="text" name="attr_certes" /></div>
+                    <div class="table-cell cell-20 cell-left">Certes</div>
+                    <div class="table-cell cell-25 cell-right">Acumen</div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_Acumene" /></div>
+                    <div class="table-cell cell-5 cell-center">/</div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_Acumene_total" /></div>
+                </div>
+                <div class="table-row input-text">
+                    <div class="table-cell"><input type="text" name="attr_Qualia" /></div>
+                    <div class="table-cell cell-left">Qualia</div>
+                    <div class="table-cell cell-right">Joy</div>
+                    <div class="table-cell "><input type="text" name="attr_joy" /></div>
+                    <div class="table-cell cell-center">/</div>
+                    <div class="table-cell "><input type="text" name="attr_joy_max" /></div>
+                </div>
+                <div class="table-row input-text">
+                    <div class="table-cell"></div>
+                    <div class="table-cell cell-left"></div>
+                    <div class="table-cell cell-right">Despair</div>
+                    <div class="table-cell "><input type="text" name="attr_despair" /></div>
+                    <div class="table-cell cell-center">/</div>
+                    <div class="table-cell "><input type="text" name="attr_despair_max" /></div>
+                </div>
+            </div>
+            <div>
+                PC Bonds:
+                <div class="sheet-expand">
+                    <span name="attr_pc_bonds"></span>
+                    <textarea spellcheck="false" name="attr_pc_bonds" spellcheck="false"></textarea>
+                </div>
+                Character Arcs:
+                <div class="sheet-expand">
+                    <span name="attr_arcs"></span>
+                    <textarea spellcheck="false" name="attr_arcs" spellcheck="false"></textarea>
+                </div>
+                My life in the Shadow
+                <div class="sheet-expand">
+                    <span name="attr_shadows"></span>
+                    <textarea spellcheck="false" name="attr_shadows" spellcheck="false"></textarea>
+                </div>
+                Neighbors and Neighborhood
+                <div class="sheet-expand">
+                    <span name="attr_neighborhod"></span>
+                    <textarea spellcheck="false" name="attr_neighborhod" spellcheck="false"></textarea>
+                </div>
+            </div>
+          </div>
+        
+          
+        </div>
+        </div>
+    </div>
+    <div class='second_page'>
+        <div class= "section-geotic sheet-geotic-input">
+            <div class='2colrow'>
+                <div class='col'>
+                    <div>
+                    Forte Abilities:
+                    <div class="sheet-expand">
+                        <span name="attr_fortee_abilities"></span>
+                        <textarea spellcheck="false" name="attr_fortee_abilities" spellcheck="false"></textarea>
+                    </div>
+                    Secrets:
+                    <fieldset class="repeating_secrets">
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-50"><input type="text" name="attr_secret_name" placeholder="name"/></div>
+                            <div class="table-cell cell-15"><input type="text" name="attr_secret_lvl" /></div>
+                        </div>
+                        <div class="sheet-expand">
+                            <span name="attr_secret_desc"></span>
+                            <textarea spellcheck="false" name="attr_secret_desc" spellcheck="false"></textarea>
+                        </div>
+                      
+                    </fieldset>
+                    <div class="sheet-expand">
+                        <span name="attr_secrets"></span>
+                        <textarea spellcheck="false" name="attr_secrets" spellcheck="false"></textarea>
+                    </div>
+                    Meaningful Items:
+                    <div class="sheet-expand">
+                        <span name="attr_meaningful_items"></span>
+                        <textarea spellcheck="false" name="attr_meaningful_items" spellcheck="false"></textarea>
+                    </div>
+                    Valuables:
+                    <div class="sheet-expand">
+                        <span name="attr_valuables"></span>
+                        <textarea spellcheck="false" name="attr_valuables" spellcheck="false"></textarea>
+                    </div>
+                    <div class="table-row input-text">
+                        <div class="table-cell cell-10 cell-right">Income:</div>
+                        <div class="table-cell cell-30"><input type="text" name="attr_income"/></div>
+                        <div class="table-cell cell-10 cell-right">Savings:</div>
+                        <div class="table-cell cell-30"><input type="text" name="attr_savings"/></div>
+                    </div>
+                    Familiar
+                    <div class="sheet-expand">
+                        <span name="attr_familiar_items"></span>
+                        <textarea spellcheck="false" name="attr_meaningful_items" spellcheck="false"></textarea>
+                    </div>
+                </div>
+                    </div>
+                <div class='col'>
+                    <div class= "table">
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-20 cell-right">Injuries</div>
+                            <div class="table-cell cell-5"><input type="checkbox" name="attr_injury_1" value="1"  /><span></span></div>
+                            <div class="table-cell cell-5"><input type="checkbox" name="attr_injury_2" value="1"  /><span></span></div>
+                            <div class="table-cell cell-5 cell-center"><input type="checkbox" name="attr_injury_3" value="1"  /><span></span></div>
+                            <div class="table-cell cell-5"></div>
+                            <div class="table-cell cell-30"><input type="text" name="attr_armor"/></div>
+                        </div>
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-right">Wounds</div>
+                            <div class="table-cell "><input type="checkbox" name="attr_wound_1" value="1" /><span></span></div>
+                            <div class="table-cell"><input type="checkbox" name="attr_wound_2" value="1" /><span></span></div>
+                            <div class="table-cell doom" >@</div>
+                            <div class="table-cell "></div>
+                            <div class="table-cell cell-center">Armor</div>
+                        </div>
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-right">Anguish</div>
+                            <div class="table-cell "><input type="checkbox" name="attr_Anguish_1" value="1"  /><span></span></div>
+                            <div class="table-cell "><input type="checkbox" name="attr_Anguish_2" value="1"  /><span></span></div>
+                            <div class="table-cell doom" >@</div>
+                            <div class="table-cell "></div>
+                            <div class="table-cell "></div>
+                        </div>
+                    </div>
+                    <div class= "table">
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-right cell-25">Rest</div>
+                            <div class="table-cell cell-center cell-25"><input type="checkbox" name="attr_rest_1" value="1"  /><span></span></div>
+                            <div class="table-cell cell-center cell-25"><input type="checkbox" name="attr_rest_2" value="1"  /><span></span></div>
+                            <div class="table-cell cell-center cell-25"><input type="checkbox" name="attr_rest_3" value="1"  /><span></span></div>
+                            <div class="table-cell cell-center cell-25"><input type="checkbox" name="attr_rest_4" value="1"  /><span></span></div>
+                            
+                        </div>
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-right"></div>
+                            <div class="table-cell cell-center">1 action</div>
+                            <div class="table-cell cell-center">1 action</div>
+                            <div class="table-cell cell-center">10 minutes</div>
+                            <div class="table-cell cell-center">1 hour</div>
+                        </div>
+                    </div>
+                    <div>Ephemera:</div> 
+                    Limit: <input type="text" name="attr_ephemera_limit"/>
+                    <div class="sheet-expand">
+                        <span name="attr_ephemera"></span>
+                        <textarea spellcheck="false" name="attr_ephemera" spellcheck="false"></textarea>
+                    </div>
+
+                    <div class= "table">
+                            <div class="table-row input-text">
+                                <div class="table-cell cell-75">Skill:</div>
+                                <div class="table-cell cell-a">Lvl</div>
+                            </div>
+                        </div>
+                    <fieldset class="repeating_skills">
+                        <div class= "table">
+                            <div class="table-row input-text">
+                                <div class="table-cell cell-75"><input type="text" name="attr_skill_name"/></div>
+                                <div class="table-cell cell-a"><input type="text" name="attr_skill_level"/></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    Nonhuman Entities I know
+                        <div class="sheet-expand">
+                            <span name="attr_responsibilities"></span>
+                            <textarea spellcheck="false" name="attr_responsibilities" spellcheck="false"></textarea>
+                        </div>
+                    Other People I know:
+                        <div class="sheet-expand">
+                            <span name="attr_people"></span>
+                            <textarea spellcheck="false" name="attr_people" spellcheck="false"></textarea>
+                        </div>
+                    NPC Bonds and Connections:
+                    <div class= "table">
+                            <div class="table-row input-text">
+                                <div class="table-cell cell-75">Name:</div>
+                                <div class="table-cell cell-a">Lvl</div>
+                            </div>
+                        </div>
+                    <fieldset class="repeating_npc_bonds">
+                        <div class= "table">
+                            <div class="table-row input-text">
+                                <div class="table-cell cell-75"><input type="text" name="attr_bond_name"/></div>
+                                <div class="table-cell cell-a"><input type="text" name="attr_bond_level"/></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='spell_page'>
+        <div class= "section-geotic input-text sheet-geotic-input">
+            Conured Entity Names I Know
+            <div class="sheet-expand">
+                <span name="attr_entity_names"></span>
+                <textarea spellcheck="false" name="attr_entity_names" spellcheck="false"></textarea>
+            </div>
+            Pacts I Know
+            <div class="sheet-expand">
+                <span name="attr_goetic_pacts"></span>
+                <textarea spellcheck="false" name="attr_goetic_pacts" spellcheck="false"></textarea>
+            </div>
+            Summoning Types
+            <div class="sheet-expand">
+                <span name="attr_goetic_summoning_types"></span>
+                <textarea spellcheck="false" name="attr_goetic_summoning_types" spellcheck="false"></textarea>
+            </div>
+            Spells:
+            <fieldset class="repeating_spells">
+                <div class="table-row input-text">
+                    <div class="table-cell cell-50"><input type="text" name="attr_spell_name" /></div>
+                    <div class="table-cell cell-15">Level:</div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_spell_level" /></div>
+                </div>
+                <div class="sheet-expand">
+                    <span name="attr_spell_desc"></span>
+                    <textarea spellcheck="false" name="attr_spell_desc" spellcheck="false"></textarea>
+                </div>
+                <div class="table-row input-text">
+                    <div class="table-cell cell-10">Depletion:</div>
+                    <div class="table-cell cell-50"><input type="text" name="attr_spell_depletion" /></div>
+                    <div class="table-cell cell-5">Color:</div>
+                    <div class="table-cell cell-10"><input type="text" name="attr_spell_color" /></div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<!-- APOSTATE --->
+<div class="block-Apostate">
+    
+    <div>
+        <button type="action" name="act_character" >&#128571;&#8551;&#9834;	&#9730;&#x2616;&#10697;</button>
+        <button type="action" name="act_second_page" >&#10086;&#9742;&#9732;&#9739;&#9737;&#8633;</button>
+        <button type="action" name="act_spell_page" >&#10042;&#10042;&#8967;&#9989;&#10042;&#10042;</button>
+    </div>
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='second_page'  />
+
+    <div class='character'>
+        <div class= "section sheet-apostate-input">
+            <div class='2colrow'>
+          <div class='col'>
+            <div class= "table">
+                <div class="table-row input-text">
+                    <div class="table-cell cell-20"><input type="text" name="attr_degree" value="1st"/></div>
+                    <div class="table-cell cell-30 cell-center">Degree</div>
+                    <div class="table-cell"><input type="text" name="attr_degree_type" value="@{order}" disabled="true" style="text-transform: capitalize" /></div>
+                </div>
+            </div>
+            <div class="input-text">
+                Heart Relationships, probably...
+                <div class="sheet-expand">
+                    <span name="attr_heart_relationships"></span>
+                    <textarea spellcheck="false" name="attr_heart_relationships" spellcheck="false"></textarea>
+                </div>
+            </div>
+            <div>
+                Appearance or some apoximation there of
+                <div class="sheet-expand">
+                    <span name="attr_appearance"></span>
+                    <textarea spellcheck="false" name="attr_appearance" spellcheck="false"></textarea>
+                </div>
+            </div>
+            <div>
+                I have no Quirks!
+                <div class="sheet-expand">
+                    <span name="attr_quirk"></span>
+                    <textarea spellcheck="false" name="attr_quirk" spellcheck="false"></textarea>
+                </div>
+            </div>
+            <div>
+                <div class= "table">
+                    <div class="table-row input-text">
+                        <div class="table-cell cell-30">House:</div>
+                        <div class="table-cell"><input type="text" name="attr_house" /></div>
+                    </div>
+                    <div class="table-row input-text">
+                        <div class="table-cell">House Type:</div>
+                        <div class="table-cell"><input type="text" name="attr_house_type" /></div>
+                    </div>
+                </div>
+                Deescription and Details:
+                <div class="sheet-expand">
+                    <span name="attr_house_detail"></span>
+                    <textarea spellcheck="false" name="attr_house_detail" spellcheck="false"></textarea>
+                </div>
+            </div>
+            House Secrets (They all have one)
+            <fieldset class="repeating_skills">
+                <div class="table-row input-text">
+                    <div class="table-cell cell-50"><input type="text" name="attr_HS_name" /></div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_HS_level" /></div>
+                </div>
+                <div class="sheet-expand">
+                    <span name="attr_house_secret_desc"></span>
+                    <textarea spellcheck="false" name="attr_house_secret_desc" spellcheck="false"></textarea>
+                </div>
+              
+            </fieldset>
+
+            
+          </div>
+        
+          <div class='col'>
+            <div class= "table">
+                <div class="table-row input-text">
+                    <div class="table-cell cell-15"><input type="text" name="attr_certes" /></div>
+                    <div class="table-cell cell-20 cell-left">Certes</div>
+                    <div class="table-cell cell-25 cell-right">Acumen</div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_Acumene" /></div>
+                    <div class="table-cell cell-5 cell-center">/</div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_Acumene_total" /></div>
+                </div>
+                <div class="table-row input-text">
+                    <div class="table-cell"><input type="text" name="attr_Qualia" /></div>
+                    <div class="table-cell cell-left">Qualia</div>
+                    <div class="table-cell cell-right">Joy</div>
+                    <div class="table-cell "><input type="text" name="attr_joy" /></div>
+                    <div class="table-cell cell-center">/</div>
+                    <div class="table-cell "><input type="text" name="attr_joy_max" /></div>
+                </div>
+                <div class="table-row input-text">
+                    <div class="table-cell"></div>
+                    <div class="table-cell cell-left"></div>
+                    <div class="table-cell cell-right">Despair</div>
+                    <div class="table-cell "><input type="text" name="attr_despair" /></div>
+                    <div class="table-cell cell-center">/</div>
+                    <div class="table-cell "><input type="text" name="attr_despair_max" /></div>
+                </div>
+            </div>
+            <div>
+                Bonds
+                <div class="sheet-expand">
+                    <span name="attr_pc_bonds"></span>
+                    <textarea spellcheck="false" name="attr_pc_bonds" spellcheck="false"></textarea>
+                </div>
+                Arcs
+                <div class="sheet-expand">
+                    <span name="attr_arcs"></span>
+                    <textarea spellcheck="false" name="attr_arcs" spellcheck="false"></textarea>
+                </div>
+                What I do in the Shadows
+                <div class="sheet-expand">
+                    <span name="attr_shadows"></span>
+                    <textarea spellcheck="false" name="attr_shadows" spellcheck="false"></textarea>
+                </div>
+                Neighbors and Neighborhood
+                <div class="sheet-expand">
+                    <span name="attr_neighborhod"></span>
+                    <textarea spellcheck="false" name="attr_neighborhod" spellcheck="false"></textarea>
+                </div>
+            </div>
+          </div>
+        
+          
+        </div>
+        </div>
+    </div>
+    <div class='second_page'>
+        <div class= "section sheet-apostate-input">
+            <div class='2colrow'>
+                <div class='col'>
+                    <div>
+                    Forte Abilities:
+                    <div class="sheet-expand">
+                        <span name="attr_fortee_abilities"></span>
+                        <textarea spellcheck="false" name="attr_fortee_abilities" spellcheck="false"></textarea>
+                    </div>
+                    Secrets:
+                    <fieldset class="repeating_secrets">
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-50"><input type="text" name="attr_secret_name" placeholder="name"/></div>
+                            <div class="table-cell cell-15"><input type="text" name="attr_secret_lvl" /></div>
+                        </div>
+                        <div class="sheet-expand">
+                            <span name="attr_secret_desc"></span>
+                            <textarea spellcheck="false" name="attr_secret_desc" spellcheck="false"></textarea>
+                        </div>
+                      
+                    </fieldset>
+                    Objects I Value:
+                    <div class="sheet-expand">
+                        <span name="attr_meaningful_items"></span>
+                        <textarea spellcheck="false" name="attr_meaningful_items" spellcheck="false"></textarea>
+                    </div>
+                    Money
+                    <div class="sheet-expand">
+                        <span name="attr_valuables"></span>
+                        <textarea spellcheck="false" name="attr_valuables" spellcheck="false"></textarea>
+                    </div>
+                    <div class="table-row input-text">
+                        <div class="table-cell cell-10 cell-right">Income:</div>
+                        <div class="table-cell cell-30"><input type="text" name="attr_income"/></div>
+                        <div class="table-cell cell-10 cell-right">Savings:</div>
+                        <div class="table-cell cell-30"><input type="text" name="attr_savings"/></div>
+                    </div>
+                    <input type="text" name="attr_apostate_3"/>
+                    <div class="sheet-expand">
+                        <span name="attr_apostate_box_3"></span>
+                        <textarea spellcheck="false" name="attr_apostate_box_3" spellcheck="false"></textarea>
+                    </div>
+                    <input type="text" name="attr_apostate_4"/>
+                    <div class="sheet-expand">
+                        <span name="attr_apostate_box_3"></span>
+                        <textarea spellcheck="false" name="attr_apostate_box_4" spellcheck="false"></textarea>
+                    </div>
+
+                </div>
+                    </div>
+                <div class='col'>
+                    <div class= "table">
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-20 cell-right">Injuries</div>
+                            <div class="table-cell cell-5"><input type="checkbox" name="attr_injury_1" value="1"  /><span></span></div>
+                            <div class="table-cell cell-5"><input type="checkbox" name="attr_injury_2" value="1"  /><span></span></div>
+                            <div class="table-cell cell-5 cell-center"><input type="checkbox" name="attr_injury_3" value="1"  /><span></span></div>
+                            <div class="table-cell cell-5"></div>
+                            <div class="table-cell cell-30"><input type="text" name="attr_armor"/></div>
+                        </div>
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-right">Wounds</div>
+                            <div class="table-cell "><input type="checkbox" name="attr_wound_1" value="1" /><span></span></div>
+                            <div class="table-cell"><input type="checkbox" name="attr_wound_2" value="1" /><span></span></div>
+                            <div class="table-cell doom" >@</div>
+                            <div class="table-cell "></div>
+                            <div class="table-cell cell-center">Armor</div>
+                        </div>
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-right">Anguish</div>
+                            <div class="table-cell "><input type="checkbox" name="attr_Anguish_1" value="1"  /><span></span></div>
+                            <div class="table-cell "><input type="checkbox" name="attr_Anguish_2" value="1"  /><span></span></div>
+                            <div class="table-cell doom" >@</div>
+                            <div class="table-cell "></div>
+                            <div class="table-cell "></div>
+                        </div>
+                    </div>
+                    <div class= "table">
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-right cell-25">Rest</div>
+                            <div class="table-cell cell-center cell-25"><input type="checkbox" name="attr_rest_1" value="1"  /><span></span></div>
+                            <div class="table-cell cell-center cell-25"><input type="checkbox" name="attr_rest_2" value="1"  /><span></span></div>
+                            <div class="table-cell cell-center cell-25"><input type="checkbox" name="attr_rest_3" value="1"  /><span></span></div>
+                            <div class="table-cell cell-center cell-25"><input type="checkbox" name="attr_rest_4" value="1"  /><span></span></div>
+                            
+                        </div>
+                        <div class="table-row input-text">
+                            <div class="table-cell cell-right"></div>
+                            <div class="table-cell cell-center">1 action</div>
+                            <div class="table-cell cell-center">1 action</div>
+                            <div class="table-cell cell-center">10 minutes</div>
+                            <div class="table-cell cell-center">1 hour</div>
+                        </div>
+                    </div>
+                    <div>Ephemera:</div> 
+                    Limit: <input type="text" name="attr_ephemera_limit"/>
+                    <div class="sheet-expand">
+                        <span name="attr_ephemera"></span>
+                        <textarea spellcheck="false" name="attr_ephemera" spellcheck="false"></textarea>
+                    </div>
+
+                    <div class= "table">
+                            <div class="table-row input-text">
+                                <div class="table-cell cell-75">Skill:</div>
+                                <div class="table-cell cell-a">Lvl</div>
+                            </div>
+                        </div>
+                    <fieldset class="repeating_skills">
+                        <div class= "table">
+                            <div class="table-row input-text">
+                                <div class="table-cell cell-75"><input type="text" name="attr_skill_name"/></div>
+                                <div class="table-cell cell-a"><input type="text" name="attr_skill_level"/></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="text" name="attr_apostate_1"/>
+                        <div class="sheet-expand">
+                            <span name="attr_responsibilities"></span>
+                            <textarea spellcheck="false" name="attr_responsibilities" spellcheck="false"></textarea>
+                        </div>
+                    <input type="text" name="attr_apostate_2"/>
+                        <div class="sheet-expand">
+                            <span name="attr_people"></span>
+                            <textarea spellcheck="false" name="attr_people" spellcheck="false"></textarea>
+                        </div>
+                    NPC Bonds and Connections
+                    <div class= "table">
+                            <div class="table-row input-text">
+                                <div class="table-cell cell-75">Name:</div>
+                                <div class="table-cell cell-a">Lvl</div>
+                            </div>
+                        </div>
+                    <fieldset class="repeating_npc_bonds">
+                        <div class= "table">
+                            <div class="table-row input-text">
+                                <div class="table-cell cell-75"><input type="text" name="attr_bond_name"/></div>
+                                <div class="table-cell cell-a"><input type="text" name="attr_bond_level"/></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='spell_page'>
+        <div class= "section input-text sheet-apostate-input">
+            Apostate Spells:
+            <fieldset class="repeating_apostate_spells">
+                <div class="table-row input-text">
+                    <div class="table-cell cell-50"><input type="text" name="attr_apostate_spell_name" /></div>
+                    <div class="table-cell cell-15">Level:</div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_apostate_speel_level" /></div>
+                </div>
+                <div class="sheet-expand">
+                    <span name="attr_apostate_spell_desc"></span>
+                    <textarea spellcheck="false" name="attr_apostate_spell_desc" spellcheck="false"></textarea>
+                </div>
+                <div class="table-row input-text">
+                    <div class="table-cell cell-10">Depletion:</div>
+                    <div class="table-cell cell-50"><input type="text" name="att_apostate_depletion" /></div>
+                    <div class="table-cell cell-5">Color:</div>
+                    <div class="table-cell cell-10"><input type="text" name="attr_apostate_color" /></div>
+                </div>
+            </fieldset>
+            Spells:
+            <fieldset class="repeating_spells">
+                <div class="table-row input-text">
+                    <div class="table-cell cell-50"><input type="text" name="attr_spell_name" /></div>
+                    <div class="table-cell cell-15">Level:</div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_spell_level" /></div>
+                </div>
+                <div class="sheet-expand">
+                    <span name="attr_spell_desc"></span>
+                    <textarea spellcheck="false" name="attr_spell_desc" spellcheck="false"></textarea>
+                </div>
+                <div class="table-row input-text">
+                    <div class="table-cell cell-10">Depletion:</div>
+                    <div class="table-cell cell-50"><input type="text" name="attr_spell_depletion" /></div>
+                    <div class="table-cell cell-5">Color:</div>
+                    <div class="table-cell cell-10"><input type="text" name="attr_spell_color" /></div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
 
 
 <script type="text/worker">
