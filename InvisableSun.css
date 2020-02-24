@@ -227,7 +227,7 @@ I forget where I found this but thanks!*/
     display: inline-block;
     vertical-align: middle;
     color: green;
-    content: """;
+    content: "☐";
     width: 14px;
     height: 14px;
     font-size: 130%;
@@ -235,7 +235,8 @@ I forget where I found this but thanks!*/
 .sheet-vance-input input[type="checkbox"]:checked + span::before
 {
     color: red;
-    content: "∅";
+    content: "✔"
+    
 }
 /**********/
 /* WEAVER */
@@ -279,7 +280,7 @@ I forget where I found this but thanks!*/
     display: inline-block;
     vertical-align: middle;
     color: green;
-    content: "◯";
+    content: "☐";
     width: 14px;
     height: 14px;
     font-size: 130%;
@@ -287,7 +288,7 @@ I forget where I found this but thanks!*/
 .sheet-weaver-input input[type="checkbox"]:checked + span::before
 {
     color: red;
-    content: "◍";
+    content: "☑";
 }
 
 /**********/
@@ -332,7 +333,7 @@ I forget where I found this but thanks!*/
     display: inline-block;
     vertical-align: middle;
     color: green;
-    content: "◯";
+    content: "Δ";
     width: 14px;
     height: 14px;
     font-size: 130%;
@@ -340,7 +341,7 @@ I forget where I found this but thanks!*/
 .sheet-maker-input input[type="checkbox"]:checked + span::before
 {
     color: red;
-    content: "◍";
+    content: "Ω";
 }
 
 
@@ -386,7 +387,7 @@ I forget where I found this but thanks!*/
     display: inline-block;
     vertical-align: middle;
     color: green;
-    content: "◯";
+    content: "₪";
     width: 14px;
     height: 14px;
     font-size: 130%;
@@ -394,7 +395,7 @@ I forget where I found this but thanks!*/
 .sheet-geotic-input input[type="checkbox"]:checked + span::before
 {
     color: red;
-    content: "◍";
+    content: "Χ";
 }
 
 
@@ -442,7 +443,8 @@ I forget where I found this but thanks!*/
     display: inline-block;
     vertical-align: middle;
     color: green;
-    content: "◯";
+    font-family: 'Pictos';
+    content: "D";
     width: 14px;
     height: 14px;
     font-size: 130%;
@@ -450,6 +452,7 @@ I forget where I found this but thanks!*/
 .sheet-apostate-input input[type="checkbox"]:checked + span::before
 {
     color: red;
-    content: "◍";
+    font-family: 'Pictos';
+    content: "k";
 }
 
