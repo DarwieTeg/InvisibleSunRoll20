@@ -8,7 +8,7 @@
         <div class="table-row input-text">
             <div class="table-cell cell-10 cell-right">A</div>
             <div class="table-cell"><input type="text" name="attr_foundation" placeholder="Foundation" /></div>
-            <div class="table-cell"><input type="text" name="attr_heart" vplaceholder="Heart" /></div>
+            <div class="table-cell"><input type="text" name="attr_heart" placeholder="Heart" /></div>
             <div class="table-cell">
                 <select name="attr_order"/>
                   <option value="no order selected" selected="selected">Select Order</option>
@@ -24,7 +24,7 @@
     <div class= "table">
         <div class="table-row input-text">
             <div class="table-cell cell-10 cell-right">Who:</div>
-            <div class="table-cell"><input type="text" name="attr_focus" placeholder="Focus"/></div>
+            <div class="table-cell"><input type="text" name="attr_focus" placeholder="Forte"/></div>
         </div>
     </div>
 </div>
@@ -53,7 +53,7 @@
             <div class="table-cell cell-center"><input type="text" name="attr_perception" /></div>
         </div>
         <div class="table-row input-certes-text-sub">
-            <div class="table-cell cell-center"></div>
+            <div class="table-cell cell-center cell-right">Max:</div>
             <div class="table-cell cell-center"><input type="text" name="attr_accuracy_max" /></div>
             <div class="table-cell cell-center"><input type="text" name="attr_physicality_max" /></div>
             <div class="table-cell cell-center"><input type="text" name="attr_movement_max" /></div>
@@ -81,7 +81,7 @@
             <div class="table-cell cell-center"><input type="text" name="attr_sortilege" /></div>
         </div>
         <div class="table-row input-qualia-text-sub">
-            <div class="table-cell cell-center"></div>
+            <div class="table-cell cell-center cell-right">Max:</div>
             <div class="table-cell cell-center"><input type="text" name="attr_interaction_max" /></div>
             <div class="table-cell cell-center"><input type="text" name="attr_intellect_max" /></div>
             <div class="table-cell cell-center"><input type="text" name="attr_sorcery_max" /></div>
@@ -1612,23 +1612,25 @@
     <div class='spell_page'>
         <div class= "section input-text sheet-apostate-input">
             Apostate Spells:
-            <fieldset class="repeating_apostate_spells">
+            <fieldset class="repeating_apostate_magic">
                 <div class="table-row input-text">
-                    <div class="table-cell cell-50"><input type="text" name="attr_apostate_spell_name" /></div>
+                    <div class="table-cell cell-50"><input type="text" name="attr_spell_name_apostate" /></div>
                     <div class="table-cell cell-15">Level:</div>
-                    <div class="table-cell cell-15"><input type="text" name="attr_apostate_speel_level" /></div>
+                    <div class="table-cell cell-15"><input type="text" name="attr_spell_level_apostate" /></div>
                 </div>
                 <div class="sheet-expand">
-                    <span name="attr_apostate_spell_desc"></span>
-                    <textarea spellcheck="false" name="attr_apostate_spell_desc" spellcheck="false"></textarea>
+                    <span name="attr_spell_desc_apostate"></span>
+                    <textarea spellcheck="false" name="attr_spell_desc_apostate" spellcheck="false"></textarea>
                 </div>
                 <div class="table-row input-text">
                     <div class="table-cell cell-10">Depletion:</div>
-                    <div class="table-cell cell-50"><input type="text" name="att_apostate_depletion" /></div>
+                    <div class="table-cell cell-50"><input type="text" name="attr_spell_depletion_apostate" /></div>
                     <div class="table-cell cell-5">Color:</div>
-                    <div class="table-cell cell-10"><input type="text" name="attr_apostate_color" /></div>
+                    <div class="table-cell cell-10"><input type="text" name="attr_spell_color_apostate" /></div>
                 </div>
             </fieldset>
+        </div>
+        <div class= "section input-text sheet-apostate-input">
             Spells:
             <fieldset class="repeating_spells">
                 <div class="table-row input-text">
