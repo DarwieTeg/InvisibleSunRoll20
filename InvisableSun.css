@@ -352,9 +352,10 @@ I forget where I found this but thanks!*/
 .sheet-geotic-input input[type="text"],
 .sheet-geotic-input input[type="number"] {
     border-color:  #000;
-    border-width:  3px ;
+    border-width:  2px ;
 	border-radius: 15px;
 	border-style:  solid;
+	padding-left: 5px;
 }
 
 .sheet-geotic-input input[type="checkbox"]
@@ -373,8 +374,17 @@ I forget where I found this but thanks!*/
 .sheet-section-geotic {
     border-color:  #E1771C;
     border-width:  10px ;
-	border-radius: 55px;
+	border-radius: 35px 50px 90px 50px;
 	border-style:  outset;
+	padding-top: 10px;
+	background: rgb(255,255,255);
+    background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(195,195,195,1) 69%, rgba(115,115,115,1) 100%);
+}
+
+.sheet-separator-goetic {
+    border-bottom: 3px solid;
+    border-color: #ffcc7e;
+    margin-bottom: 2px;
 }
 
 
