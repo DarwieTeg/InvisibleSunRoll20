@@ -93,7 +93,7 @@
 
 <input name="attr_order" type="hidden" class="order-toggle" value="apostate">
 
- <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
+ <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='spell_page'  />
 
 <!-- ORDER OF THE VANCE -->
 
@@ -349,7 +349,7 @@
                                 <div class="table-cell cell-a">Lvl</div>
                             </div>
                         </div>
-                    <fieldset class="repeating_npc_bonds">
+                    <fieldset class="repeating_npcbonds">
                         <div class= "table">
                             <div class="table-row input-text">
                                 <div class="table-cell cell-75"><input type="text" name="attr_bond_name"/></div>
@@ -364,7 +364,7 @@
     <div class='spell_page'>
         <div class= "section input-text sheet-vance-input">
             Vance Spells:
-            <fieldset class="repeating_vance_spells">
+            <fieldset class="repeating_vancespells">
                 <div class="table-row input-text">
                     <div class="table-cell cell-50"><input type="text" name="attr_vance_spell_name" /></div>
                     <div class="table-cell cell-15">Level:</div>
@@ -656,7 +656,7 @@
                                 <div class="table-cell cell-a">Lvl</div>
                             </div>
                         </div>
-                    <fieldset class="repeating_npc_bonds">
+                    <fieldset class="repeating_npcbonds">
                         <div class= "table">
                             <div class="table-row input-text">
                                 <div class="table-cell cell-75"><input type="text" name="attr_bond_name"/></div>
@@ -671,7 +671,7 @@
     <div class='spell_page'>
         <div class= "section-weaver sheet-weaver-input">
             Aggregates:
-            <fieldset class="repeating_vance_spells">
+            <fieldset class="repeating_vancespells">
                 <div class="table-row input-text">
                     <div class="table-cell cell-50"><input type="text" name="attr_vance_spell_name" /></div>
                 </div>
@@ -681,13 +681,13 @@
                 </div>
             </fieldset>
             Enhanced Weaves
-            <fieldset class="repeating_enhanced_weave_spells">
+            <fieldset class="repeating_enhancedweavespells">
                 <div class="table-row input-text">
                     <div class="table-cell cell-50"><input type="text" name="attr_enhanced_weave_name" /></div>
                 </div>
             </fieldset>
             Practiced Weaves:
-            <fieldset class="repeating_practiced_weave_spells">
+            <fieldset class="repeating_practicedweavespells">
                 <div class="table-row input-text">
                     <div class="table-cell cell-50"><input type="text" name="attr_practiced_weave_name" /></div>
                 </div>
@@ -970,7 +970,7 @@
                                 <div class="table-cell cell-a">Lvl</div>
                             </div>
                         </div>
-                    <fieldset class="repeating_npc_bonds">
+                    <fieldset class="repeating_npcbonds">
                         <div class= "table">
                             <div class="table-row input-text">
                                 <div class="table-cell cell-75"><input type="text" name="attr_bond_name"/></div>
@@ -1283,7 +1283,7 @@
                                 <div class="table-cell cell-a">Lvl</div>
                             </div>
                         </div>
-                    <fieldset class="repeating_npc_bonds">
+                    <fieldset class="repeating_npcbonds">
                         <div class= "table">
                             <div class="table-row input-text">
                                 <div class="table-cell cell-75"><input type="text" name="attr_bond_name"/></div>
@@ -1342,7 +1342,7 @@
         <button type="action" name="act_second_page" >&#10086;&#9742;&#9732;&#9739;&#9737;&#8633;</button>
         <button type="action" name="act_spell_page" >&#10042;&#10042;&#8967;&#9989;&#10042;&#10042;</button>
     </div>
-    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='second_page'  />
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='spell_page'  />
 
     <div class='character'>
         <div class= "section sheet-apostate-input">
@@ -1597,7 +1597,7 @@
                                 <div class="table-cell cell-a">Lvl</div>
                             </div>
                         </div>
-                    <fieldset class="repeating_npc_bonds">
+                    <fieldset class="repeating_npcbonds">
                         <div class= "table">
                             <div class="table-row input-text">
                                 <div class="table-cell cell-75"><input type="text" name="attr_bond_name"/></div>
@@ -1612,41 +1612,45 @@
     <div class='spell_page'>
         <div class= "section input-text sheet-apostate-input">
             Apostate Spells:
-            <fieldset class="repeating_apostate_magic">
-                <div class="table-row input-text">
-                    <div class="table-cell cell-50"><input type="text" name="attr_spell_name_apostate" /></div>
-                    <div class="table-cell cell-15">Level:</div>
-                    <div class="table-cell cell-15"><input type="text" name="attr_spell_level_apostate" /></div>
-                </div>
-                <div class="sheet-expand">
-                    <span name="attr_spell_desc_apostate"></span>
-                    <textarea spellcheck="false" name="attr_spell_desc_apostate" spellcheck="false"></textarea>
-                </div>
-                <div class="table-row input-text">
-                    <div class="table-cell cell-10">Depletion:</div>
-                    <div class="table-cell cell-50"><input type="text" name="attr_spell_depletion_apostate" /></div>
-                    <div class="table-cell cell-5">Color:</div>
-                    <div class="table-cell cell-10"><input type="text" name="attr_spell_color_apostate" /></div>
+            <fieldset class="repeating_apopspell"> 
+                <div class="separator-apostate">
+                    <div class="table-row input-text">
+                        <div class="table-cell cell-50"><input type="text" name="attr_spell_name_apostate" /></div>
+                        <div class="table-cell cell-15">Level:</div>
+                        <div class="table-cell cell-15"><input type="text" name="attr_spell_level_apostate" /></div>
+                    </div>
+                    <div class="sheet-expand">
+                        <span name="attr_spell_desc_apostate"></span>
+                        <textarea spellcheck="false" name="attr_spell_desc_apostate" spellcheck="false"></textarea>
+                    </div>
+                    <div class="table-row input-text separator-apostate">
+                        <div class="table-cell cell-10">Depletion:</div>
+                        <div class="table-cell cell-50"><input type="text" name="attr_spell_depletion_apostate" /></div>
+                        <div class="table-cell cell-5">Color:</div>
+                        <div class="table-cell cell-10"><input type="text" name="attr_spell_color_apostate" /></div>
+                    </div>
                 </div>
             </fieldset>
         </div>
         <div class= "section input-text sheet-apostate-input">
             Spells:
             <fieldset class="repeating_spells">
-                <div class="table-row input-text">
-                    <div class="table-cell cell-50"><input type="text" name="attr_spell_name" /></div>
-                    <div class="table-cell cell-15">Level:</div>
-                    <div class="table-cell cell-15"><input type="text" name="attr_spell_level" /></div>
-                </div>
-                <div class="sheet-expand">
-                    <span name="attr_spell_desc"></span>
-                    <textarea spellcheck="false" name="attr_spell_desc" spellcheck="false"></textarea>
-                </div>
-                <div class="table-row input-text">
-                    <div class="table-cell cell-10">Depletion:</div>
-                    <div class="table-cell cell-50"><input type="text" name="attr_spell_depletion" /></div>
-                    <div class="table-cell cell-5">Color:</div>
-                    <div class="table-cell cell-10"><input type="text" name="attr_spell_color" /></div>
+                <div class="separator-apostate">
+                    <div class="table-row input-text">
+                        <div class="table-cell cell-50"><input type="text" name="attr_spell_name" /></div>
+                        <div class="table-cell cell-15">Level:</div>
+                        <div class="table-cell cell-15"><input type="text" name="attr_spell_level" /></div>
+                    </div>
+                    <div class="sheet-expand">
+                        <span name="attr_spell_desc"></span>
+                        <textarea spellcheck="false" name="attr_spell_desc" spellcheck="false"></textarea>
+                    </div>
+                    <div class="table-row input-text ">
+                        <div class="table-cell cell-10">Depletion:</div>
+                        <div class="table-cell cell-50"><input type="text" name="attr_spell_depletion" /></div>
+                        <div class="table-cell cell-5">Color:</div>
+                        <div class="table-cell cell-10"><input type="text" name="attr_spell_color" /></div>
+                    </div>
                 </div>
             </fieldset>
         </div>

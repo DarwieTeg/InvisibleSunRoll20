@@ -411,6 +411,11 @@ I forget where I found this but thanks!*/
 	border-style:  none none double double;
 }
 
+
+.sheet-apostate-input textarea {
+    padding-left: 5px;   
+}
+
 .sheet-apostate-input input[type="checkbox"]
 {
     opacity: 0;
@@ -431,6 +436,12 @@ I forget where I found this but thanks!*/
 	border-style:  outset;
 	outline-color: #E4781A;
 	outline-width: 5px;
+}
+
+.sheet-separator-apostate {
+    border-bottom: 3px solid;
+    border-color: #a8a8a8;
+    margin-bottom: 2px;
 }
 
 
