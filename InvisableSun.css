@@ -238,6 +238,16 @@ I forget where I found this but thanks!*/
     content: "✔"
     
 }
+
+/**********/
+/* SECRET */
+/**********/
+
+.sheet-invisible {
+    color: #ebebeb;
+    display: inline;
+}
+
 /**********/
 /* WEAVER */
 /**********/
@@ -301,6 +311,7 @@ I forget where I found this but thanks!*/
     border-width:  2px ;
 	border-radius: 0px;
 	border-style:  none none groove dotted;
+	padding: 2px;
 }
 
 .sheet-maker-input input[type="checkbox"]
@@ -476,4 +487,6 @@ I forget where I found this but thanks!*/
     font-family: 'Pictos';
     content: "D";
 }
+
+
 
