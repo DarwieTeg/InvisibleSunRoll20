@@ -235,7 +235,7 @@ I forget where I found this but thanks!*/
 .sheet-vance-input input[type="checkbox"]:checked + span::before
 {
     color: red;
-    content: "✔"
+    content: "X"
     
 }
 
@@ -298,7 +298,7 @@ I forget where I found this but thanks!*/
 .sheet-weaver-input input[type="checkbox"]:checked + span::before
 {
     color: red;
-    content: "☑";
+    content: "X";
 }
 
 /**********/

@@ -33,8 +33,8 @@
     <div class= "table">
         <div class="table-row input-text">
             <div class="table-cell cell-20 cell-center certes-cell">Certes</div>
-            <div class="table-cell cell-20 cell-center"></div>
-            <div class="table-cell cell-20 cell-center"></div>
+            <div class="table-cell cell-20 cell-center">Hidden Knowledge:</div>
+            <div class="table-cell cell-20 cell-center"><input type="text" name="attr_hidden_knowledge" /></div>
             <div class="table-cell cell-20 cell-center"></div>
             <div class="table-cell cell-20 cell-center"></div>
         </div>
@@ -91,7 +91,7 @@
 
 </div>
 
-<!-- <input name="attr_order" type="hidden" class="order-toggle" value="goetica"> -->
+<input name="attr_order" type="hidden" class="order-toggle" value="vance">
 
 <!-- <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='spell_page'  /> -->
 
@@ -174,7 +174,7 @@
           <div class='col'>
             <div class= "table">
                 <div class="table-row input-text">
-                    <div class="table-cell cell-15"><input type="text" name="attr_certes" /></div>
+                    <div class="table-cell cell-20"><input type="text" name="attr_certes" /></div>
                     <div class="table-cell cell-20 cell-left">Certes</div>
                     <div class="table-cell cell-25 cell-right">Acumen</div>
                     <div class="table-cell cell-15"><input type="text" name="attr_Acumene" /></div>
@@ -190,8 +190,8 @@
                     <div class="table-cell "><input type="text" name="attr_joy_max" /></div>
                 </div>
                 <div class="table-row input-text">
-                    <div class="table-cell"></div>
-                    <div class="table-cell cell-left"></div>
+                    <div class="table-cell cell-left">Crux Spent: </div>
+                    <div class="table-cell cell-left"><input type="text" name="attr_crux_spent" /></div>
                     <div class="table-cell cell-right">Despair</div>
                     <div class="table-cell "><input type="text" name="attr_despair" /></div>
                     <div class="table-cell cell-center">/</div>
@@ -356,6 +356,10 @@
                                 <div class="table-cell cell-a"><input type="text" name="attr_bond_level"/></div>
                             </div>
                         </div>
+                        <div class="sheet-expand">
+                            <span name="attr_bonddesc"></span>
+                            <textarea spellcheck="false" name="attr_bonddesc" spellcheck="false"></textarea>
+                        </div>
                     </fieldset>
                 </div>
             </div>
@@ -482,7 +486,7 @@
           <div class='col'>
             <div class= "table">
                 <div class="table-row input-text">
-                    <div class="table-cell cell-15"><input type="text" name="attr_certes" /></div>
+                    <div class="table-cell cell-20"><input type="text" name="attr_certes" /></div>
                     <div class="table-cell cell-20 cell-left">Certes</div>
                     <div class="table-cell cell-25 cell-right">Acumen</div>
                     <div class="table-cell cell-15"><input type="text" name="attr_Acumene" /></div>
@@ -498,8 +502,8 @@
                     <div class="table-cell "><input type="text" name="attr_joy_max" /></div>
                 </div>
                 <div class="table-row input-text">
-                    <div class="table-cell"></div>
-                    <div class="table-cell cell-left"></div>
+                    <div class="table-cell cell-left">Crux Spent: </div>
+                    <div class="table-cell cell-left"><input type="text" name="attr_crux_spent" /></div>
                     <div class="table-cell cell-right">Despair</div>
                     <div class="table-cell "><input type="text" name="attr_despair" /></div>
                     <div class="table-cell cell-center">/</div>
@@ -663,6 +667,10 @@
                                 <div class="table-cell cell-a"><input type="text" name="attr_bond_level"/></div>
                             </div>
                         </div>
+                        <div class="sheet-expand">
+                            <span name="attr_bonddesc"></span>
+                            <textarea spellcheck="false" name="attr_bonddesc" spellcheck="false"></textarea>
+                        </div>
                     </fieldset>
                 </div>
             </div>
@@ -683,7 +691,7 @@
             Enhanced Weaves
             <fieldset class="repeating_enhancedweavespells">
                 <div class="table-row input-text">
-                    <div class="table-cell cell-50"><input type="text" name="attr_enhanced_weave_name" /></div>
+                    <div class="table-cell"><input type="text" name="attr_enhanced_weave_name" /></div>
                 </div>
             </fieldset>
             Practiced Weaves:
@@ -797,7 +805,7 @@
           <div class='col'>
             <div class= "table">
                 <div class="table-row input-text">
-                    <div class="table-cell cell-15"><input type="text" name="attr_certes" /></div>
+                    <div class="table-cell cell-20"><input type="text" name="attr_certes" /></div>
                     <div class="table-cell cell-20 cell-left">Certes</div>
                     <div class="table-cell cell-25 cell-right">Acumen</div>
                     <div class="table-cell cell-15"><input type="text" name="attr_Acumene" /></div>
@@ -813,8 +821,8 @@
                     <div class="table-cell "><input type="text" name="attr_joy_max" /></div>
                 </div>
                 <div class="table-row input-text">
-                    <div class="table-cell"></div>
-                    <div class="table-cell cell-left"></div>
+                    <div class="table-cell cell-left">Crux Spent: </div>
+                    <div class="table-cell cell-left"><input type="text" name="attr_crux_spent" /></div>
                     <div class="table-cell cell-right">Despair</div>
                     <div class="table-cell "><input type="text" name="attr_despair" /></div>
                     <div class="table-cell cell-center">/</div>
@@ -842,6 +850,7 @@
                     <span name="attr_neighborhod"></span>
                     <textarea spellcheck="false" name="attr_neighborhod" spellcheck="false"></textarea>
                 </div>
+                
             </div>
           </div>
         
@@ -977,6 +986,10 @@
                                 <div class="table-cell cell-a"><input type="text" name="attr_bond_level"/></div>
                             </div>
                         </div>
+                        <div class="sheet-expand">
+                            <span name="attr_bonddesc"></span>
+                            <textarea spellcheck="false" name="attr_bonddesc" spellcheck="false"></textarea>
+                        </div>
                     </fieldset>
                 </div>
             </div>
@@ -1100,7 +1113,7 @@
           <div class='col'>
             <div class= "table">
                 <div class="table-row input-text">
-                    <div class="table-cell cell-15"><input type="text" name="attr_certes" /></div>
+                    <div class="table-cell cell-20"><input type="text" name="attr_certes" /></div>
                     <div class="table-cell cell-20 cell-left">Certes</div>
                     <div class="table-cell cell-25 cell-right">Acumen</div>
                     <div class="table-cell cell-15"><input type="text" name="attr_Acumene" /></div>
@@ -1116,8 +1129,8 @@
                     <div class="table-cell "><input type="text" name="attr_joy_max" /></div>
                 </div>
                 <div class="table-row input-text">
-                    <div class="table-cell"></div>
-                    <div class="table-cell cell-left"></div>
+                    <div class="table-cell cell-left">Crux Spent: </div>
+                    <div class="table-cell cell-left"><input type="text" name="attr_crux_spent" /></div>
                     <div class="table-cell cell-right">Despair</div>
                     <div class="table-cell "><input type="text" name="attr_despair" /></div>
                     <div class="table-cell cell-center">/</div>
@@ -1290,6 +1303,10 @@
                                 <div class="table-cell cell-a"><input type="text" name="attr_bond_level"/></div>
                             </div>
                         </div>
+                        <div class="sheet-expand">
+                            <span name="attr_bonddesc"></span>
+                            <textarea spellcheck="false" name="attr_bonddesc" spellcheck="false"></textarea>
+                        </div>
                     </fieldset>
                 </div>
             </div>
@@ -1414,7 +1431,7 @@
           <div class='col'>
             <div class= "table">
                 <div class="table-row input-text">
-                    <div class="table-cell cell-15"><input type="text" name="attr_certes" /></div>
+                    <div class="table-cell cell-20"><input type="text" name="attr_certes" /></div>
                     <div class="table-cell cell-20 cell-left">Certes</div>
                     <div class="table-cell cell-25 cell-right">Acumen</div>
                     <div class="table-cell cell-15"><input type="text" name="attr_Acumene" /></div>
@@ -1430,8 +1447,8 @@
                     <div class="table-cell "><input type="text" name="attr_joy_max" /></div>
                 </div>
                 <div class="table-row input-text">
-                    <div class="table-cell"></div>
-                    <div class="table-cell cell-left"></div>
+                    <div class="table-cell cell-left">Crux Spent: </div>
+                    <div class="table-cell cell-left"><input type="text" name="attr_crux_spent" /></div>
                     <div class="table-cell cell-right">Despair</div>
                     <div class="table-cell "><input type="text" name="attr_despair" /></div>
                     <div class="table-cell cell-center">/</div>
@@ -1587,7 +1604,7 @@
                             <span name="attr_responsibilities"></span>
                             <textarea spellcheck="false" name="attr_responsibilities" spellcheck="false"></textarea>
                         </div>
-                    <input type="text" name="attr_apostate_2"/>
+                    People I know:
                         <div class="sheet-expand">
                             <span name="attr_people"></span>
                             <textarea spellcheck="false" name="attr_people" spellcheck="false"></textarea>
@@ -1605,6 +1622,10 @@
                                 <div class="table-cell cell-75"><input type="text" name="attr_bond_name"/></div>
                                 <div class="table-cell cell-a"><input type="text" name="attr_bond_level"/></div>
                             </div>
+                        </div>
+                        <div class="sheet-expand">
+                            <span name="attr_bonddesc"></span>
+                            <textarea spellcheck="false" name="attr_bonddesc" spellcheck="false"></textarea>
                         </div>
                     </fieldset>
                 </div>
