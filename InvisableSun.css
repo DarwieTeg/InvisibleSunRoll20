@@ -22,6 +22,33 @@
 }
 
 
+/*sheet page buttons */
+
+.sheet-page-button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius: 12px 12px 0px 0px;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-size:15px;
+	padding:3px 14px;
+	text-decoration:none;
+	text-shadow:0px 2px 2px #bababa;
+	width: 200px;
+}
+.sheet-page-button:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.sheet-page-button:active {
+	position:relative;
+	top:1px;
+}
+
+
 /*Hideable sub sections*/
 
 input.sheet-arrow {
@@ -243,6 +270,10 @@ I forget where I found this but thanks!*/
     text-align: left;
 }
 
+/*********/
+/* VANCE */
+/*********/
+
 /*Order Spec Styles */
 .sheet-vance-input textarea,
 .sheet-vance-input input[type="text"],
@@ -264,6 +295,13 @@ I forget where I found this but thanks!*/
     margin: -10px;
     cursor: pointer;
     z-index: 1;
+}
+
+.sheet-section-vance {
+    border-color:  #777777;
+    border-width:  4px ;
+	border-radius: 0px;
+	border-style:  outset;
 }
 
 /* Fake checkbox vance */
@@ -404,12 +442,12 @@ I forget where I found this but thanks!*/
 }
 
 
-/**********/
-/* geotic */
-/**********/
-.sheet-geotic-input textarea,
-.sheet-geotic-input input[type="text"],
-.sheet-geotic-input input[type="number"] {
+/***********/
+/* goetica */
+/***********/
+.sheet-goetica-input textarea,
+.sheet-goetica-input input[type="text"],
+.sheet-goetica-input input[type="number"] {
     border-color:  #000;
     border-width:  2px ;
 	border-radius: 15px;
@@ -417,7 +455,7 @@ I forget where I found this but thanks!*/
 	padding-left: 5px;
 }
 
-.sheet-geotic-input input[type="checkbox"]
+.sheet-goetica-input input[type="checkbox"]
 {
     opacity: 0;
     width: 16px;
@@ -430,17 +468,17 @@ I forget where I found this but thanks!*/
     z-index: 1;
 }
 
-.sheet-section-geotic {
+.sheet-section-goetica {
     border-color:  #E1771C;
-    border-width:  10px ;
-	border-radius: 35px 50px 90px 50px;
+    border-width:  5px ;
+	border-radius: 25px 40px 70px 40px;
 	border-style:  outset;
 	padding-top: 10px;
 	background: rgb(255,255,255);
     background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(195,195,195,1) 69%, rgba(115,115,115,1) 100%);
 }
 
-.sheet-separator-goetic {
+.sheet-separator-goetica {
     border-bottom: 3px solid;
     border-color: #ffcc7e;
     margin-bottom: 2px;
@@ -448,7 +486,7 @@ I forget where I found this but thanks!*/
 
 
 /* Fake checkbox geotic */
-.sheet-geotic-input input[type="checkbox"] + span::before
+.sheet-goetica-input input[type="checkbox"] + span::before
 {
     margin-right: 4px;
     line-height: 14px;
@@ -461,7 +499,7 @@ I forget where I found this but thanks!*/
     height: 14px;
     font-size: 130%;
 }
-.sheet-geotic-input input[type="checkbox"]:checked + span::before
+.sheet-goetica-input input[type="checkbox"]:checked + span::before
 {
     color: red;
     content: "Χ";
