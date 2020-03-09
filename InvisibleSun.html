@@ -16,6 +16,7 @@
                   <option value="weavers">Of the Order of Weavers</option>
                   <option value="goetica">Of the Order of Goetica</option>
                   <option value="apostate">Apostate</option>
+                  <option value="npc">NPC</option>
                 </select>
             </div>
         </div>
@@ -89,7 +90,6 @@
     </div>
 
 </div>
-
 <input name="attr_order" type="hidden" class="order-toggle" value="vance">
 
 <!-- <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='spell_page'  /> -->
@@ -2152,6 +2152,85 @@
 
 </div>
 
+<div class="block-NPC">
+    <div class= "section-vance">
+        <div class= "table">
+            <div class="table-row input-text">
+                <div class="table-cell cell-8">Name:</div>
+                <div class="table-cell cell-70"><input type="text" name="attr_character_name" /></div>
+                <div class="table-cell cell-8 cell-right">Level:</div> 
+                <div class="table-cell cell-10"><input type="text" name="attr_character_name" /></div> 
+            </div>
+        </div>
+        Description: 
+        <div class="sheet-expand">
+            <span name="attr_npc_desc"></span>
+            <textarea spellcheck="false" name="attr_npc_desc" spellcheck="false"></textarea>
+        </div>
+        <div class= "table">
+            <div class="table-row input-text">
+                <div class="table-cell cell-8">
+                    Injuries
+                </div>
+                <div class="table-cell cell-10">
+                    <input type="number" name="attr_npc_injuries" class="cell-center" />
+                </div>
+                <div class="table-cell cell-3 cell-center">
+                    /
+                </div>
+                <div class="table-cell cell-10">
+                    <input type="number" name="attr_npc_injuries_max" value="3" class="cell-center" />
+                </div>
+                <div class="table-cell cell-a"></div>
+            </div>
+            <div class="table-row input-text">
+                <div class="table-cell cell-8">
+                    Wounds:
+                </div>
+                <div class="table-cell cell-10">
+                    <input type="number" name="attr_npc_Wounds" class="cell-center" />
+                </div>
+                <div class="table-cell cell-3 cell-center">
+                    /
+                </div>
+                <div class="table-cell cell-10">
+                    <input type="number" name="attr_npc_Wounds_max" value="3" class="cell-center" />
+                </div>
+                <div class="table-cell cell-a"></div>
+            </div>
+            <div class="table-row input-text">
+                <div class="table-cell cell-8">
+                    Anguish
+                </div>
+                <div class="table-cell cell-10">
+                    <input type="number" name="attr_npc_Anguish" class="cell-center" />
+                </div>
+                <div class="table-cell cell-3 cell-center">
+                    /
+                </div>
+                <div class="table-cell cell-10">
+                    <input type="number" name="attr_npc_Anguish_max" value="3" class="cell-center" />
+                </div>
+                <div class="table-cell cell-a"></div>
+            </div>
+            
+            
+        </div>
+        <div class= "table">
+            <div class="table-row input-text">
+                <div class="table-cell cell-10">Defensese:</div>
+                <div class="table-cell cell-a"><input type="text" name="attr_npc_defenses" /></div>
+            </div>
+            <div class="table-row input-text">
+                <div class="table-cell">Modifications:</div>
+                <div class="table-cell"><input type="text" name="attr_npc_Modifcations" /></div>
+            </div>
+        </div>
+        Attacks: 
+        <div class="sheet-expand">
+            <span name="attr_npc_attacks"></span>
+            <textarea spellcheck="false" name="attr_npc_attacks" spellcheck="false"></textarea>
+        </div>
 
 
 <script type="text/worker">

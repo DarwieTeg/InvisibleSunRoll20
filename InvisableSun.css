@@ -132,7 +132,8 @@ I forget where I found this but thanks!*/
 .sheet-order-toggle[value="vance"] ~ div.sheet-block-Vance,
 .sheet-order-toggle[value="weavers"] ~ div.sheet-block-Weavers,
 .sheet-order-toggle[value="goetica"] ~ div.sheet-block-Goetica,
-.sheet-order-toggle[value="apostate"] ~ div.sheet-block-Apostate{
+.sheet-order-toggle[value="apostate"] ~ div.sheet-block-Apostate,
+.sheet-order-toggle[value="npc"] ~ div.sheet-block-NPC{
   display: block !important;
 }
 
@@ -141,7 +142,8 @@ I forget where I found this but thanks!*/
 .sheet-block-Vance,
 .sheet-block-Weavers,
 .sheet-block-Goetica,
-.sheet-block-Apostate{
+.sheet-block-Apostate,
+.sheet-block-NPC{
   display: none;
 }
 
