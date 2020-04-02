@@ -147,6 +147,8 @@ I forget where I found this but thanks!*/
   display: none;
 }
 
+
+
 /* TABS */
 
 /*Configure the tab buttons*/
@@ -162,7 +164,51 @@ I forget where I found this but thanks!*/
 .sheet-tabstoggle[value="spell_page"] ~ div.sheet-spell_page {
 	display: block;
 }
+
+/* ROLL BUTTONS */
+
+/*
+.sheet-roll-divider
+{
+    border-bottom: 1px;
+    border-style: none none solid none;
+}
+*/
+
+button[type=roll].sheet-roll-button::before {
+    content: 'i'; 
+    font-family: "dicefontd10";
+    max-width: 100%;
+}
+
+/*
+
+.sheet-block-a,
+.sheet-block-switch::checked ~ .sheet-block-b {
+  display: block;
+}
+
+.sheet-block-b,
+.sheet-block-switch:not(:checked) ~ .sheet-block-a {
+  display: none;
+}
+
+
+*/
 /* STYLES */
+
+
+.sheet-input-hidden-knowledge input[type="text"],
+.sheet-input-hidden-knowledge input[type="number"] {
+  font-size: 175%;
+  min-width: 15px;
+  max-width: 100%;
+  width: 90%;
+  background-color: black;
+  color: white;
+  border-radius: 35px;
+  text-align: center;
+}
 
 .sheet-certes-cell {
     font-size: 150%;

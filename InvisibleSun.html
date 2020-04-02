@@ -31,26 +31,21 @@
 
 <div class= "section">
     <div class= "table">
-        <div class="table-row input-text">
-            <div class="table-cell cell-20 cell-center certes-cell">Certes</div>
-            <div class="table-cell cell-20 cell-center">Hidden Knowledge:</div>
-            <div class="table-cell cell-20 cell-center"><input type="text" name="attr_hidden_knowledge" /></div>
-            <div class="table-cell cell-20 cell-center"></div>
-            <div class="table-cell cell-20 cell-center"></div>
+        <div class="table-row">
+            <div class="table-cell cell-10 cell-center certes-cell">Certes</div>
+            <div class="table-cell cell-12 cell-center certes-cell">Accuracy</div>
+            <div class="table-cell cell-12 cell-center certes-cell">Physicality</div>
+            <div class="table-cell cell-12 cell-center certes-cell">Movement</div>
+            <div class="table-cell cell-12 cell-center certes-cell">Perception</div>
+            <div class="table-cell cell-10 cell-center">Hidden Knowledge:</div>
         </div>
-        <div class="table-row input-text">
-            <div class="table-cell cell-center"></div>
-            <div class="table-cell cell-center certes-cell">Accuracy</div>
-            <div class="table-cell cell-center certes-cell">Physicality</div>
-            <div class="table-cell cell-center certes-cell">Movement</div>
-            <div class="table-cell cell-center certes-cell">Perception</div>
-        </div>
-        <div class="table-row input-certes-text">
-            <div class="table-cell cell-center"></div>
-            <div class="table-cell cell-center"><input type="text" name="attr_accuracy" /></div>
-            <div class="table-cell cell-center"><input type="text" name="attr_physicality" /></div>
-            <div class="table-cell cell-center"><input type="text" name="attr_movement" /></div>
-            <div class="table-cell cell-center"><input type="text" name="attr_perception" /></div>
+        <div class="table-row ">
+            <div class="table-cell cell-center input-certes-text"></div>
+            <div class="table-cell cell-center input-certes-text"><input type="text" name="attr_accuracy" /></div>
+            <div class="table-cell cell-center input-certes-text"><input type="text" name="attr_physicality" /></div>
+            <div class="table-cell cell-center input-certes-text"><input type="text" name="attr_movement" /></div>
+            <div class="table-cell cell-center input-certes-text"><input type="text" name="attr_perception" /></div>
+            <div class="table-cell cell-10 cell-center input-hidden-knowledge"><input type="text" name="attr_hidden_knowledge" /></div>
         </div>
         <div class="table-row input-certes-text-sub">
             <div class="table-cell cell-center cell-right">Max:</div>
@@ -61,24 +56,53 @@
         </div>
         <div class="table-row input-text">
             <div class="table-cell cell-20 cell-center qualia-cell">Qualia</div>
-            <div class="table-cell cell-20 cell-center"></div>
-            <div class="table-cell cell-20 cell-center"></div>
-            <div class="table-cell cell-20 cell-center"></div>
-            <div class="table-cell cell-20 cell-center"></div>
-        </div>
-        <div class="table-row input-text">
-            <div class="table-cell cell-center"></div>
             <div class="table-cell cell-center qualia-cell">Interaction</div>
             <div class="table-cell cell-center qualia-cell">Intellect</div>
             <div class="table-cell cell-center qualia-cell">Sorcery</div>
             <div class="table-cell cell-center qualia-cell">Sortilege</div>
+            <div class="table-cell cell-center">
+            <button class="roll-button" type="roll" value="#SheetGMMacro" name="roll_BluffCheck">Macro</button>
+            <!--<div>
+                  <input type="checkbox" class="sheet-block-switch" name="attr_use_macro" value="1">
+                  <div class="sheet-block-a">
+                    Lorem ipsum dolor sit amet
+                  </div>
+                  <div class="sheet-block-b">
+                    consectetur adipiscing elit
+                  </div>
+                </div>
+
+                <div>
+                    <button class="roll-button" type="roll" value="#SheetMacro" name="roll_BluffCheck"></button><button class="roll-button" type="roll" value="#SheetGMMacro" name="roll_BluffCheck">GM</button></div>
+                </div>
+                <div>
+                    <button class="roll-button" type="roll" value="#SheetMacro" name="roll_BluffCheck"></button><button class="roll-button" type="roll" value="#SheetGMMacro" name="roll_BluffCheck">GM</button></div>
+                </div>
+                -->
+            </div>
         </div>
-        <div class="table-row input-qualia-text">
-            <div class="table-cell cell-center"></div>
-            <div class="table-cell cell-center"><input type="text" name="attr_interaction" /></div>
-            <div class="table-cell cell-center"><input type="text" name="attr_intellect" /></div>
-            <div class="table-cell cell-center"><input type="text" name="attr_sorcery" /></div>
-            <div class="table-cell cell-center"><input type="text" name="attr_sortilege" /></div>
+        <div class="table-row">
+            <div class="table-cell cell-center input-qualia-text"></div>
+            <div class="table-cell cell-center input-qualia-text"><input type="text" name="attr_interaction" /></div>
+            <div class="table-cell cell-center input-qualia-text"><input type="text" name="attr_intellect" /></div>
+            <div class="table-cell cell-center input-qualia-text"><input type="text" name="attr_sorcery" /></div>
+            <div class="table-cell cell-center input-qualia-text"><input type="text" name="attr_sortilege" /></div>
+            <div class="table-cell cell-center">
+                <button class="roll-button" type="roll" value="/roll ?{Number of Dice|1}d10cs9cf10" name="roll_BluffCheck">Normal</button>
+                <!--
+                <div>
+                  <input type="hidden" class="sheet-block-switch" name="attr_use_macro" value="0">
+                  <div class="sheet-block-a">
+                    NACHO CHEESE
+                  </div>
+                  <input type="hidden" class="sheet-block-switch" name="attr_use_macro" value="0">
+                  <div class="sheet-block-b">
+                    DISCO DAN
+                  </div>
+                </div>
+                -->
+            </div>
+            
         </div>
         <div class="table-row input-qualia-text-sub">
             <div class="table-cell cell-center cell-right">Max:</div>
