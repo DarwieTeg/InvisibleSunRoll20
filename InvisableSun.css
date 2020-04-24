@@ -1,3 +1,4 @@
+
 .sheet-table {
   display: table;
   width: 100%;
@@ -25,29 +26,128 @@
 /*sheet page buttons */
 
 .sheet-page-button {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-	background-color:#ededed;
 	border-radius: 12px 12px 0px 0px;
-	border:2px solid #dcdcdc;
 	display:inline-block;
 	cursor:pointer;
 	color:black;
 	font-size:15px;
 	padding:3px 14px;
 	text-decoration:none;
-	text-shadow:0px 2px 2px #bababa;
 	width: 200px;
 }
-.sheet-page-button:hover {
-	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
-	background-color:#dfdfdf;
-}
+
 .sheet-page-button:active {
 	position:relative;
 	top:1px;
 }
 
+.sheet-page-button-selected {
+	border-radius: 12px 12px 0px 0px;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	font-size:15px;
+	padding:3px 14px;
+	text-decoration:none;
+	width: 200px;
+}
+
+.sheet-page-button-selected:active {
+	position:relative;
+	top:1px;
+}
+
+/* Order specific colors*/
+
+.sheet-page-button-vance {
+    box-shadow:inset 0px 1px 0px 0px #bee4f9;
+    background:linear-gradient(to bottom, #97c1db 5%, #468ccf 100%);
+    background-color:#ededed;
+    border:1px solid #3866a3;
+    color:#14396a;
+    text-shadow:0px 2px 2px #7cabde;
+}
+
+.sheet-page-button-vance-sel {
+    background:linear-gradient(to bottom, #bee4f9 5%, #7cabde 100%);
+    color:#14396a;
+    background-color:#97c1db;
+    border:1px solid #80a6bd;
+    text-shadow:0px 2px 2px #bababa;
+    box-shadow:inset 0px 1px 0px 0px #bee4f9;
+}
+
+.sheet-page-button-weaver {
+    box-shadow:inset 0px 1px 0px 0px #cf2939;
+    background:linear-gradient(to bottom, #c52936 5%, #8b1c26 100%);
+    background-color:#901d28;
+    border:1px solid #901d28;
+    color:black;
+    text-shadow:0px 2px 2px #cf2939;
+}
+
+.sheet-page-button-weaver-sel {
+    background:linear-gradient(to bottom, #eea86d 5%, #e4781a 100%);
+    color:#180d03;
+    background-color:#180d03;
+    border:1px solid #180d03;
+    text-shadow:0px 2px 2px #e98a3b;
+    box-shadow:inset 0px 1px 0px 0px #b15d14;
+}
+
+.sheet-page-button-maker {
+    box-shadow:inset 0px 1px 0px 0px #517bfc;
+    background:linear-gradient(to bottom, #6777c6 5%, #2c4389 100%);
+    background-color:#3c5cbc;
+    border:1px solid #3c5cbc;
+    color:black;
+    text-shadow:0px 2px 2px #6777c6;
+}
+
+.sheet-page-button-maker-sel {
+    background:linear-gradient(to bottom, #b488dc 5%, #9570b6 100%);
+    color:#030203;
+    background-color:RE;
+    border:1px solid #4c395d;
+    text-shadow:0px 2px 2px #614976;
+    box-shadow:inset 0px 1px 0px 0px #9570b6;
+}
+
+.sheet-page-button-goetica {
+    box-shadow:inset 0px 1px 0px 0px #757575;
+    background:linear-gradient(to bottom, #686868 5%, #1b1b1b 100%);
+    background-color:#020202;
+    border:1px solid #020202;
+    color:#f4f4f4;
+    text-shadow:0px 2px 2px #757575;
+}
+
+.sheet-page-button-goetica-sel {
+    background:linear-gradient(to bottom, #e1771c 5%, #884811 100%);
+    color:black;
+    background-color:RE;
+    border:1px solid #c76a19;
+    text-shadow:0px 2px 2px #c76a19;
+    box-shadow:inset 0px 1px 0px 0px #e1771c;
+}
+
+.sheet-page-button-apostate {
+    box-shadow:inset 0px 1px 0px 0px #0d0d0d;
+    background:linear-gradient(to bottom, #686868 5%, #1b1b1b 100%);
+    background-color:#f2f2f2;
+    border:1px solid #f2f2f2;
+    color:#f4f4f4;
+    text-shadow:0px 2px 2px #0d0d0d;
+}
+
+.sheet-page-button-apostate-sel {
+    box-shadow:inset 0px 1px 0px 0px #0d0d0d;
+    background:linear-gradient(to bottom, #333333 5%, #cccccc 100%);
+    background-color:#f2f2f2;
+    border:1px solid #f2f2f2;
+    color:#f4f4f4;
+    text-shadow:0px 2px 2px #0d0d0d;
+}
 
 /*Hideable sub sections*/
 
@@ -436,7 +536,7 @@ button[type=roll].sheet-roll-button::before {
 }
 
 /**********/
-/* maker */
+/* MAKERS */
 /**********/
 .sheet-maker-input textarea,
 .sheet-maker-input input[type="text"],

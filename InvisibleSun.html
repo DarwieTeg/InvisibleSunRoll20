@@ -1,3 +1,5 @@
+
+<!-- Basic Info Section --> 
 <div class= "section">
     <div class= "table">
             <div class="table-row input-text">Name: <input type="text" name="attr_character_name" /></div>
@@ -28,7 +30,7 @@
         </div>
     </div>
 </div>
-
+<!-- Stat pools --> 
 <div class= "section">
     <div class= "table">
         <div class="table-row">
@@ -61,24 +63,6 @@
             <div class="table-cell cell-center qualia-cell">Sorcery</div>
             <div class="table-cell cell-center qualia-cell">Sortilege</div>
             <div class="table-cell cell-center">
-            <button class="roll-button" type="roll" value="#SheetGMMacro" name="roll_BluffCheck">Macro</button>
-            <!--<div>
-                  <input type="checkbox" class="sheet-block-switch" name="attr_use_macro" value="1">
-                  <div class="sheet-block-a">
-                    Lorem ipsum dolor sit amet
-                  </div>
-                  <div class="sheet-block-b">
-                    consectetur adipiscing elit
-                  </div>
-                </div>
-
-                <div>
-                    <button class="roll-button" type="roll" value="#SheetMacro" name="roll_BluffCheck"></button><button class="roll-button" type="roll" value="#SheetGMMacro" name="roll_BluffCheck">GM</button></div>
-                </div>
-                <div>
-                    <button class="roll-button" type="roll" value="#SheetMacro" name="roll_BluffCheck"></button><button class="roll-button" type="roll" value="#SheetGMMacro" name="roll_BluffCheck">GM</button></div>
-                </div>
-                -->
             </div>
         </div>
         <div class="table-row">
@@ -88,21 +72,8 @@
             <div class="table-cell cell-center input-qualia-text"><input type="text" name="attr_sorcery" /></div>
             <div class="table-cell cell-center input-qualia-text"><input type="text" name="attr_sortilege" /></div>
             <div class="table-cell cell-center">
-                <button class="roll-button" type="roll" value="/roll ?{Number of Dice|1}d10cs9cf10" name="roll_BluffCheck">Normal</button>
-                <!--
-                <div>
-                  <input type="hidden" class="sheet-block-switch" name="attr_use_macro" value="0">
-                  <div class="sheet-block-a">
-                    NACHO CHEESE
-                  </div>
-                  <input type="hidden" class="sheet-block-switch" name="attr_use_macro" value="0">
-                  <div class="sheet-block-b">
-                    DISCO DAN
-                  </div>
-                </div>
-                -->
+                <button class="roll-button" type="roll" value="/roll (1d10cs9cf10>?{Difficulty - Venture = |4}f10) + (?{Magic Dice|0}d10cs9cf10>?{Difficulty - Venture = |4})" name="roll_check"></button>
             </div>
-            
         </div>
         <div class="table-row input-qualia-text-sub">
             <div class="table-cell cell-center cell-right">Max:</div>
@@ -114,22 +85,21 @@
     </div>
 
 </div>
-<input name="attr_order" type="hidden" class="order-toggle" value="vance">
+<input name="attr_order" type="hidden" class="order-toggle" value="apostate">
 
 <!-- <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='spell_page'  /> -->
 
 <!-- ORDER OF THE VANCE -->
 
 <div class="block-Vance">
-    
-    <div class="cell-center">
-        <button type="action" name="act_character" class="sheet-page-button">Logic</button>
-        <button type="action" name="act_second_page" class="sheet-page-button">Reason</button>
-        <button type="action" name="act_spell_page" class="sheet-page-button">Endless Grimoire</button>
-    </div>
-    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='spell_page'  />
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
 
     <div class='character'>
+        <div class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button-selected page-button-vance-sel">Logic</button>
+            <button type="action" name="act_second_page" class="sheet-page-button page-button-vance">Reason</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button page-button-vance">Endless Grimoire</button>
+        </div>
         <div class= "section-vance">
             <div class='2colrow'>
               <div class='col'>
@@ -200,7 +170,7 @@
                         <fieldset class="repeating_skills">
                             <div class="table-row input-text">
                                 <div class="table-cell cell-50"><input type="text" name="attr_HS_name" /></div>
-                                <div class="table-cell cell-15"><input type="text" name="attr_HS_level" /></div>
+                                <div class="table-cell cell-15"><input type="text" name="attr_HS_level"/></div>
                             </div>
                             <div class="sheet-expand">
                                 <span name="attr_house_secret_desc"></span>
@@ -285,6 +255,11 @@
         </div>
     </div>
     <div class='second_page'>
+        <div class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button page-button-vance">Logic</button>
+            <button type="action" name="act_second_page" class="sheet-page-button-selected page-button-vance-sel">Reason</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button page-button-vance">Endless Grimoire</button>
+        </div>        
         <div class= "section-vance">
             <div class='2colrow'>
                 <div class='col'>
@@ -480,6 +455,11 @@
     </div>
     </div>
     <div class='spell_page'>
+        <div class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button page-button-vance">Logic</button>
+            <button type="action" name="act_second_page" class="sheet-page-button page-button-vance">Reason</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button-selected page-button-vance-sel">Endless Grimoire</button>
+        </div>
         <div class= "section input-text sheet-vance-input">
             Vance Magik:
             <fieldset class="repeating_vancespells">
@@ -526,15 +506,14 @@
 <!-- ORDER OF WEAVERS -->
 
 <div class="block-Weavers">
-    
-    <div class="cell-center">
-        <button type="action" name="act_character" class="sheet-page-button">Warp</button>
-        <button type="action" name="act_second_page" class="sheet-page-button">Weft</button>
-        <button type="action" name="act_spell_page" class="sheet-page-button">Endless Grimoire</button>
-    </div>
-    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='second_page'  />
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
 
     <div class='character'>
+        <div class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button-selected page-button-weaver-sel">Warp</button>
+            <button type="action" name="act_second_page" class="sheet-page-button page-button-weaver">Weft</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button page-button-weaver">Endless Grimoire</button>
+        </div>
         <div class= "section-weaver">
             <div class='2colrow'>
               <div class='col'>
@@ -690,6 +669,11 @@
         </div>
     </div>
     <div class='second_page'>
+        <div class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button page-button-weaver">Warp</button>
+            <button type="action" name="act_second_page" class="sheet-page-button-selected page-button-weaver-sel">Weft</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button page-button-weaver">Endless Grimoire</button>
+        </div>
         <div class= "section-weaver">
             <div class='2colrow'>
                 <div class='col'>
@@ -885,6 +869,11 @@
     </div>
     </div>
     <div class='spell_page'>
+        <div class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button page-button-weaver">Warp</button>
+            <button type="action" name="act_second_page" class="sheet-page-button page-button-weaver">Weft</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button-selected page-button-weaver-sel">Endless Grimoire</button>
+        </div>
         <div class= "section-weaver sheet-weaver-input">
             Aggregates:
             <fieldset class="repeating_vancespells">
@@ -939,14 +928,15 @@
 
 <div class="block-Makers">
     
-    <div class="cell-center">
-        <button type="action" name="act_character" class="sheet-page-button">Patration</button>
-        <button type="action" name="act_second_page" class="sheet-page-button">Rimestock</button>
-        <button type="action" name="act_spell_page" class="sheet-page-button">Endless Grimoire & Crafts</button>
-    </div>
-    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='second_page'  />
+
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
 
     <div class='character'>
+        <div class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button sheet-page-button-maker-sel">Patration</button>
+            <button type="action" name="act_second_page" class="sheet-page-button sheet-page-button-maker">Rimestock</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button sheet-page-button-maker">Endless Grimoire & Crafts</button>
+        </div>
         <div class= "section-maker">
             <div class='2colrow'>
               <div class='col'>
@@ -1102,6 +1092,11 @@
         </div>
     </div>
     <div class='second_page'>
+        <div class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button sheet-page-button-maker">Patration</button>
+            <button type="action" name="act_second_page" class="sheet-page-button sheet-page-button-maker-sel">Rimestock</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button sheet-page-button-maker">Endless Grimoire & Crafts</button>
+        </div>
         <div class= "section-maker">
             <div class='2colrow'>
                 <div class='col'>
@@ -1297,6 +1292,11 @@
     </div>
     </div>
     <div class='spell_page'>
+        <div class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button sheet-page-button-maker">Patration</button>
+            <button type="action" name="act_second_page" class="sheet-page-button sheet-page-button-maker">Rimestock</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button sheet-page-button-maker-sel">Endless Grimoire & Crafts</button>
+        </div>
         <div class= "section-maker sheet-maker-input">
             Signature Object:
             <div class="sheet-expand">
@@ -1340,16 +1340,15 @@
 <!-- ORDER OF GOEETICS --->
 
 <div class="block-Goetica">
-    
-    <div  class="cell-center">
-        <button type="action" name="act_character" class="sheet-page-button" >Gateways</button>
-        <button type="action" name="act_second_page" class="sheet-page-button" >Portals</button>
-        <button type="action" name="act_spell_page" class="sheet-page-button" >Endless Grimoire</button>
-    </div>
-    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='second_page'  />
-
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
     <div class='character'>
+        <div  class="cell-center">
+            <button type="action" name="act_character" class="page-button page-button-goetica-sel" >Gateways</button>
+            <button type="action" name="act_second_page" class="page-button page-button-goetica" >Portals</button>
+            <button type="action" name="act_spell_page" class="page-button page-button-goetica" >Endless Grimoire</button>
+        </div>
         <div class= "section-goetica">
+            
             <div class='2colrow'>
               <div class='col'>
                 <div class= "table">
@@ -1504,6 +1503,11 @@
         </div>
     </div>
     <div class='second_page'>
+        <div  class="cell-center">
+            <button type="action" name="act_character" class="page-button page-button-goetica" >Gateways</button>
+            <button type="action" name="act_second_page" class="page-button page-button-goetica-sel" >Portals</button>
+            <button type="action" name="act_spell_page" class="page-button page-button-goetica" >Endless Grimoire</button>
+        </div>
         <div class= "section-goetica">
             <div class='2colrow'>
                 <div class='col'>
@@ -1709,7 +1713,12 @@
     </div>
     </div>
     <div class='spell_page'>
-        <div class= "section-geotic input-text sheet-geotic-input">
+        <div  class="cell-center">
+            <button type="action" name="act_character" class="page-button page-button-goetica" >Gateways</button>
+            <button type="action" name="act_second_page" class="page-button page-button-goetica" >Portals</button>
+            <button type="action" name="act_spell_page" class="page-button page-button-goetica-sel" >Endless Grimoire</button>
+        </div>
+        <div class= "section-goetica input-text sheet-geotica-input">
             Conured Entity Names I Know
             <div class="sheet-expand">
                 <span name="attr_entity_names"></span>
@@ -1718,12 +1727,12 @@
             Pacts I Know
             <div class="sheet-expand">
                 <span name="attr_goetic_pacts"></span>
-                <textarea spellcheck="false" name="attr_goetic_pacts" spellcheck="false"></textarea>
+                <textarea spellcheck="false" name="attr_goetica_pacts" spellcheck="false"></textarea>
             </div>
             Summoning Types
             <div class="sheet-expand">
                 <span name="attr_goetic_summoning_types"></span>
-                <textarea spellcheck="false" name="attr_goetic_summoning_types" spellcheck="false"></textarea>
+                <textarea spellcheck="false" name="attr_goetica_summoning_types" spellcheck="false"></textarea>
             </div>
             Spells:
             <fieldset class="repeating_spells">
@@ -1754,14 +1763,15 @@
 <!-- APOSTATE --->
 <div class="block-Apostate">
     
-    <div  class="cell-center">
-        <button type="action" name="act_character" class="sheet-page-button">Page 1</button>
-        <button type="action" name="act_second_page" class="sheet-page-button">Page 2</button>
-        <button type="action" name="act_spell_page" class="sheet-page-button">Endless Grimoire</button>
-    </div>
-    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='second_page'  />
+    
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
 
     <div class='character'>
+        <div  class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button page-button-apostate-sel">Page 1</button>
+            <button type="action" name="act_second_page" class="sheet-page-button page-button-apostate">Page 2</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button page-button-apostate">Endless Grimoire</button>
+        </div>
         <div class= "section-apostate">
             <div class='2colrow'>
               <div class='col'>
@@ -1917,6 +1927,11 @@
         </div>
     </div>
     <div class='second_page'>
+        <div  class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button page-button-apostate-sel">Page 1</button>
+            <button type="action" name="act_second_page" class="sheet-page-button page-button-apostate">Page 2</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button page-button-apostate">Endless Grimoire</button>
+        </div>
         <div class= "section-apostate">
             <div class='2colrow'>
                 <div class='col'>
@@ -2132,6 +2147,11 @@
     </div>
     </div>
     <div class='spell_page'>
+        <div  class="cell-center">
+            <button type="action" name="act_character" class="sheet-page-button page-button-apostate-sel">Page 1</button>
+            <button type="action" name="act_second_page" class="sheet-page-button page-button-apostate">Page 2</button>
+            <button type="action" name="act_spell_page" class="sheet-page-button page-button-apostate">Endless Grimoire</button>
+        </div>
         <div class= "section input-text sheet-apostate-input">
             Apostate Spells:
             <fieldset class="repeating_apopspell"> 
@@ -2260,6 +2280,9 @@
             <span name="attr_npc_attacks"></span>
             <textarea spellcheck="false" name="attr_npc_attacks" spellcheck="false"></textarea>
         </div>
+    </div>
+</div>
+
 
 
 <script type="text/worker">
@@ -2272,4 +2295,3 @@
         });
     });
 </script>
-
